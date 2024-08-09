@@ -1,18 +1,21 @@
-import LinkedInLogo from "../footer-icon/linkedin-logo.components";
-import GitHubLogo from "../footer-icon/github-logo.components";
+import LinkedInLogo from "../../assets/linkedin-logo.component";
+import GitHubLogo from "../../assets/github-logo.component";
 
 import FooterIcon from "../footer-icon/footer-icon.component";
 
-import { FooterContainer } from "./footer.styles";
+import { FooterContainer, FooterIconsContainer } from "./footer.styles";
 
 //This footer component will appear on every page
 const Footer = () => {
     return (
         <FooterContainer>
-            <div>
+            {/* Links to the author's social profile are contained here */}
+            <FooterIconsContainer>
                 <FooterIcon href="https://www.linkedin.com/in/levi-arthur-wright/" title="LinkedIn Profile" icon={<LinkedInLogo />}/>
                 <FooterIcon href="https://github.com/law973" title="GitHub Profile" icon={<GitHubLogo />}/>
-            </div>
+            </FooterIconsContainer>
+
+            {/* Copright text */}
             <small>
                 &copy; 2024 - Levi Wright
             </small>
