@@ -1,21 +1,22 @@
-import { ReactComponent as LinkedInLogo } from '../../assets/linkedin-white.svg';
-import { ReactComponent as GitHubLogo } from '../../assets/github-mark-white.svg';
+import LinkedInLogo from "../footer-icon/linkedin-logo.components";
+import GitHubLogo from "../footer-icon/github-logo.components";
+
+import FooterIcon from "../footer-icon/footer-icon.component";
+
+import { FooterContainer } from "./footer.styles";
 
 //This footer component will appear on every page
 const Footer = () => {
     return (
-        <>
-            {/* Clicking this arrow will take you back to the top of the page */}
+        <FooterContainer>
             <div>
-                <p>Back to Top</p>
+                <FooterIcon href="https://www.linkedin.com/in/levi-arthur-wright/" title="LinkedIn Profile" icon={<LinkedInLogo />}/>
+                <FooterIcon href="https://github.com/law973" title="GitHub Profile" icon={<GitHubLogo />}/>
             </div>
-
-            {/* Links to the author's social profiles are included here */}
-            <div>
-                <LinkedInLogo />
-                <GitHubLogo />
-            </div>
-        </>
+            <small>
+                &copy; 2024 - Levi Wright
+            </small>
+        </FooterContainer>
     )
 };
 
