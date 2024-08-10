@@ -9,11 +9,9 @@ type FooterIconProps = {
 
 const FooterIcon = ({ href, title, icon }: FooterIconProps) => {
     return (
-        <>
-            <FooterIconContainer rel="noreferrer" href={href} target="_blank" title={title}>
-                {icon}
-            </FooterIconContainer>
-        </>
+        <FooterIconContainer rel="noreferrer" href={href} target="_blank" title={title}>
+            {icon}
+        </FooterIconContainer>
     );
 };
 

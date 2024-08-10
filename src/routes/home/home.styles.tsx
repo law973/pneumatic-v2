@@ -61,6 +61,14 @@ export const GreetingWelcome = styled.h2`
 	}
 `;
 
+export const GreetingArrow = styled.div`
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+`;
+
 export const IntroductionContainer = styled.div`
     display: flex;
     flex-direction: column;
