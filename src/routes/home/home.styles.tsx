@@ -62,11 +62,23 @@ export const GreetingWelcome = styled.h2`
 `;
 
 export const GreetingArrow = styled.div`
+    animation: arrowAppear 1.25s 2.75s forwards, downArrowMove 1.25s ease-in-out 2.75s infinite alternate;
     bottom: 0;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    opacity: 0;
+
+    @keyframes arrowAppear {
+		to { opacity: 1; }
+	}
+
+    @keyframes downArrowMove {
+        0% { transform: translate(-50%, 0); }
+        100% {
+            transform: translate(-50%, -33%);
+        }
+    }
 `;
 
 export const IntroductionContainer = styled.div`
