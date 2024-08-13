@@ -3,7 +3,8 @@ import {
     GreetingHello, 
     GreetingWelcome, 
     GreetingArrow,
-    IntroductionContainer 
+    IntroductionContainer,
+    IntroductionCard 
 } from "./home.styles";
 import Footer from "../../components/footer/footer.component";
 import ArrowIcon from "../../components/arrow-icon/arrow-icon.component";
@@ -31,16 +32,20 @@ const Home = () => {
             </GreetingContainer>
             {/* This section has a description of what the website provides */}
             <IntroductionContainer id="introduction">
-                <p>This website is designed to help you reach your fitness goals and tap into your true potential.</p>
+                <IntroductionCard>
+                    <p>
+                        This website is designed to help you reach your fitness goals and tap into your true potential.
+                    </p>
+                    <p>
+                        The three main elements to improving your physical well-being are <strong>diet</strong>, <strong>exercise</strong>, and <strong>recovery</strong>. 
+                        There are sections that will cover each element individually, and provide you with the information you'll need 
+                        (and the <strong>tools</strong> you'll want) as you proceed on your fitness journey.
+                    </p>
 
-                <p>The three main elements to improving your physical well-being are <strong>diet</strong>, <strong>exercise</strong>, and <strong>recovery</strong>. 
-                    There are sections that will cover each element individually, and provide you with the information you'll need 
-                    (and the <strong>tools</strong> you'll want) as you proceed on your fitness journey.
-                </p>
+                    <p>(There's also a <strong>shop</strong> too...)</p>
 
-                <p>(There's also a <strong>shop</strong> too...)</p>
-                
-                <p>Let's get started!</p>
+                    <p>Let's get started!</p>
+                </IntroductionCard>
             </IntroductionContainer>
             <Footer />
         </>

@@ -5,8 +5,6 @@ export const ArrowIconContainer = styled.a`
 
     svg {
         height: auto;
-		/* fallback width */
 		width: 102px;
-		width: 4vmax;
     }
 `;
