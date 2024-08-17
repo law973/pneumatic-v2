@@ -19,6 +19,10 @@ export const GreetingContainer = styled.header`
 export const GreetingHello = styled.h1`
     font-size: clamp(4.5rem, 4vw, 7rem);
 
+    @media screen and (max-width: 667px) and (orientation: landscape) {
+        margin: auto 0;
+    }
+
     span {
         animation: helloMove 0.35s forwards;
         display: inline-block;
@@ -86,6 +90,7 @@ export const GreetingArrow = styled.div`
     left: 50%;
     opacity: 0;
     position: absolute;
+    transform: translateX(-50%);
 
     @keyframes arrowAppear {
 		to { opacity: 1; }
@@ -95,6 +100,17 @@ export const GreetingArrow = styled.div`
         0% { transform: translate(-50%, 0); }
         100% {
             transform: translate(-50%, -33%);
+        }
+    }
+
+    @media screen and (max-width: 667px) and (orientation: landscape) {
+        
+
+        @keyframes downArrowMove {
+            0% { transform: translate(-50%, 10%); }
+            100% {
+                transform: translate(-50%, -5%);
+            }
         }
     }
 
