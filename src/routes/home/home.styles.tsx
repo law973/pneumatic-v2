@@ -25,7 +25,7 @@ export const GreetingHello = styled.h1`
 
     /* Default landscape font size (iPhone SE) */
     @media screen and (orientation: landscape) {
-        font-size: 13vw;
+        font-size: 12vw;
     }
 
     /* (Surface Duo) Landscape font size */
@@ -35,17 +35,22 @@ export const GreetingHello = styled.h1`
     
     /* (Samsung Galaxy S8+) Landscape font size */
     @media screen and (min-width: 740px) and (orientation: landscape) {
-        font-size: 11vw;
+        font-size: 10vw;
     }
 
     /* (Galaxy Z Fold 5) Landscape font size */
     @media screen and (min-width: 882px) and (orientation: landscape) {
-        font-size: 9vw;
+        font-size: 8vw;
     }
 
     /* Larger mobile device landscapes have the auto top and bottom margin restored */
     @media screen and (min-width: 933px) and (orientation: landscape) {
         margin: auto;
+    }
+
+    /* (Nest Hub) Landscape font size */
+    @media screen and (min-width: 1024px) and (orientation: landscape) {
+        font-size: 12vw;
     }
 
     span {
@@ -100,7 +105,7 @@ export const GreetingHello = styled.h1`
 export const GreetingWelcome = styled.h2`
     animation: welcomeAppear 1.25s 1.75s forwards;
     /* Default portrait font size (iPhone SE) */
-    font-size: 8vw;
+    font-size: 12vw;
     opacity: 0;
 
     @keyframes welcomeAppear {
@@ -121,6 +126,11 @@ export const GreetingWelcome = styled.h2`
     /* (Galaxy Z Fold 5) Landscape font size */
     @media screen and (min-width: 882px) and (orientation: landscape) {
         font-size: 5vw;
+    }
+
+    /* (Nest Hub) Landscape font size */
+    @media screen and (min-width: 1024px) and (orientation: landscape) {
+        font-size: 7vw;
     }
 
     /* Text appears instantly if reduced motion is preferred */
