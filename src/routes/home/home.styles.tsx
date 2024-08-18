@@ -19,38 +19,33 @@ export const GreetingContainer = styled.header`
 
 // Styling for hello text
 export const GreetingHello = styled.h1`
-    /* Default portrait font size (iPhone SE) */
-    font-size: 20vw;
+    /* Default font size */
+    font-size: 5.5rem;
     margin: auto 0;
 
-    /* Default landscape font size (iPhone SE) */
-    @media screen and (orientation: landscape) {
-        font-size: 12vw;
+    /* Breakpoint (Small) */
+    /* @media screen and (min-width: 576px) {
+
+    } */
+
+    /* Breakpoint (Medium) */
+    @media screen and (min-width: 768px) {
+        font-size: 8rem;
     }
 
-    /* (Surface Duo) Landscape font size */
-    @media screen and (min-width: 720px) and (orientation: landscape) {
-        font-size: 15vw;
-    }
-    
-    /* (Samsung Galaxy S8+) Landscape font size */
-    @media screen and (min-width: 740px) and (orientation: landscape) {
-        font-size: 10vw;
+    /* Breakpoint (Large) */
+    @media screen and (min-width: 992px) {
+        font-size: 12rem;
     }
 
-    /* (Galaxy Z Fold 5) Landscape font size */
-    @media screen and (min-width: 882px) and (orientation: landscape) {
-        font-size: 8vw;
+    /* Breakpoint (Extra Large) */
+    @media screen and (min-width: 1200px) {
+        font-size: 12.25rem;
     }
 
-    /* Larger mobile device landscapes have the auto top and bottom margin restored */
-    @media screen and (min-width: 933px) and (orientation: landscape) {
-        margin: auto;
-    }
-
-    /* (Nest Hub) Landscape font size */
-    @media screen and (min-width: 1024px) and (orientation: landscape) {
-        font-size: 12vw;
+    /* Breakpoint (Extra Extra Large) */
+    @media screen and (min-width: 1400px) {
+        font-size: 14rem;
     }
 
     span {
@@ -105,34 +100,39 @@ export const GreetingHello = styled.h1`
 export const GreetingWelcome = styled.h2`
     animation: welcomeAppear 1.25s 1.75s forwards;
     /* Default portrait font size (iPhone SE) */
-    font-size: 12vw;
+    font-size: 3.25rem;
+    margin-bottom: 0;
     opacity: 0;
 
     @keyframes welcomeAppear {
 		to { opacity: 1; }
 	}
 
-    /* Default landscape font size (iPhone SE) */
-    @media screen and (orientation: landscape) {
-        font-size: 7vw;
-        margin: auto 0;
+    /* Breakpoint (Small) */
+    /* @media screen and (min-width: 576px) {
+
+    } */
+
+    /* Breakpoint (Medium) */
+    @media screen and (min-width: 768px) {
+        font-size: 5.5rem;
     }
 
-    /* (Samsung Galaxy S8+) Landscape font size */
-    @media screen and (min-width: 740px) and (orientation: landscape) {
-        font-size: 6vw;
+    /* Breakpoint (Large) */
+    @media screen and (min-width: 992px) {
+        font-size: 8rem;
     }
 
-    /* (Galaxy Z Fold 5) Landscape font size */
-    @media screen and (min-width: 882px) and (orientation: landscape) {
-        font-size: 5vw;
+    /* Breakpoint (Extra Large) */
+    @media screen and (min-width: 1200px) {
+        font-size: 8.25rem;
     }
 
-    /* (Nest Hub) Landscape font size */
-    @media screen and (min-width: 1024px) and (orientation: landscape) {
-        font-size: 7vw;
+    /* Breakpoint (Extra Extra Large) */
+    @media screen and (min-width: 1400px) {
+        font-size: 10rem;
     }
-
+    
     /* Text appears instantly if reduced motion is preferred */
     @media (prefers-reduced-motion: reduce) {
         animation: none;
@@ -154,14 +154,21 @@ export const GreetingArrow = styled.div`
 	}
 
     @keyframes downArrowMove {
+        0% { transform: translate(-50%, 0); }
+        100% {
+            transform: translate(-50%, -33%);
+        }
+    }
+
+    /* @keyframes downArrowMove {
         0% { transform: translate(-50%, 10%); }
         100% {
             transform: translate(-50%, -5%);
         }
-    }
+    } */
 
     /* Larger mobile device landscapes have a greater range of motion for the arrow */
-    @media screen and (min-width: 933px) and (orientation: landscape) {
+    /* @media screen and (min-width: 933px) and (orientation: landscape) {
 
         @keyframes downArrowMove {
             0% { transform: translate(-50%, 0); }
@@ -169,7 +176,7 @@ export const GreetingArrow = styled.div`
                 transform: translate(-50%, -33%);
             }
         }
-    }
+    } */
 
     /* Arrow appears instantly and has no motion if reduced motion is preferred */
     @media (prefers-reduced-motion: reduce) {

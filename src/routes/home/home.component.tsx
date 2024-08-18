@@ -47,6 +47,7 @@ const Home = () => {
                     <p>Let's get started!</p>
                 </IntroductionCard>
             </IntroductionContainer>
+            {/* Contains links to the author's social profiles */}
             <Footer />
         </>
     )
