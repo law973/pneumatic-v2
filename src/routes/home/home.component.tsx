@@ -46,6 +46,9 @@ const Home = () => {
 
                     <p>Let's get started!</p>
                 </IntroductionCard>
+                <div>
+                    Diet | Exercise | Recovery | Shop
+                </div>
             </IntroductionContainer>
             {/* Contains links to the author's social profiles */}
             <Footer />
