@@ -4,7 +4,8 @@ import {
     GreetingWelcome, 
     GreetingArrow,
     IntroductionContainer,
-    IntroductionCard 
+    IntroductionCard, 
+    NextSection
 } from "./home.styles";
 import Footer from "../../components/footer/footer.component";
 import ArrowIcon from "../../components/arrow-icon/arrow-icon.component";
@@ -15,7 +16,7 @@ const Home = () => {
         <>
             <GreetingContainer>
                 {/* The hello text and welcome text are located here */}
-                <div>
+                <header>
                     <GreetingHello>
                         {/* Spans are targeted to delay the animation for each individual letter */}
                         <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>!</span>
@@ -24,7 +25,7 @@ const Home = () => {
                         {/* The welcome text appears after the hello text */}
                         Welcome to <em>Pneumatic</em>
                     </GreetingWelcome>
-                </div>
+                </header>
                 {/* The arrow leading to the introduction page is located here */}
                 <GreetingArrow>
                     <ArrowIcon href="#introduction" title="Introduction" icon={<ArrowDown />}/>
@@ -32,7 +33,7 @@ const Home = () => {
             </GreetingContainer>
             {/* This section has a description of what the website provides */}
             <IntroductionContainer id="introduction">
-                <IntroductionCard>
+                <IntroductionCard as="main">
                     <p>
                         This website is designed to help you reach your fitness goals and tap into your true potential.
                     </p>
@@ -46,9 +47,7 @@ const Home = () => {
 
                     <p>Let's get started!</p>
                 </IntroductionCard>
-                <div>
-                    Diet | Exercise | Recovery | Shop
-                </div>
+                <NextSection to='/diet'>Next Section: Diet</NextSection>
             </IntroductionContainer>
             {/* Contains links to the author's social profiles */}
             <Footer />

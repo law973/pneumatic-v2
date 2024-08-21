@@ -11,7 +11,9 @@ export const Card = styled.div`
 		18.5px 18.5px 21.2px rgba(0, 0, 0, 0.044),
 		32.4px 32.4px 37px rgba(0, 0, 0, 0.052),
 		70px 70px 80px rgba(0, 0, 0, 0.07);
+	display: inline-block;
     padding: 0 25px;
+	width: fit-content;
 
     p {
 	    max-width: 75ch;

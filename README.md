@@ -21,7 +21,8 @@ This project provides fitness information and tools.
 
 - Built using React, Typescript, and Styled Components
 - Mobile-first and responsive design
+- Accessibility taken into account
+- "Client side routing" with React Router
 - CSS animations, with different styling for users who prefer reduced motion
-- Accessibility taken into aacount
 - Search engine optimization
 - Semantic HTML
