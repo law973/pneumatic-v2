@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { Card } from "../../components/card/card.styles";
 import { Link } from "react-router-dom";
 
 export const RecoveryContainer = styled.div`
@@ -8,18 +7,8 @@ export const RecoveryContainer = styled.div`
     background-color: #bbbdf6;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
-`;
-
-export const RecoveryCard = styled(Card)`
-    background-color: #ededfd;
-    color: #000;
-
-    ::selection {
-        background-color: #800080;
-        color: #fff;
-    }
 `;
 
 export const NextSectionTools = styled(Link)`

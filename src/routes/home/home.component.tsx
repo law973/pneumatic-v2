@@ -3,10 +3,11 @@ import {
     GreetingHello, 
     GreetingWelcome, 
     GreetingArrow,
-    IntroductionContainer,
-    IntroductionCard, 
+    IntroductionContainer, 
     NextSection
 } from "./home.styles";
+import Card from "../../components/card/card.component";
+import { CARD_TYPE_CLASSES } from '../../components/card/card.component';
 import Footer from "../../components/footer/footer.component";
 import ArrowIcon from "../../components/arrow-icon/arrow-icon.component";
 import ArrowDown from "../../assets/arrow-down.component";
@@ -33,7 +34,7 @@ const Home = () => {
             </GreetingContainer>
             {/* This section has a description of what the website provides */}
             <IntroductionContainer id="introduction">
-                <IntroductionCard as="main">
+                <Card cardType={CARD_TYPE_CLASSES.introduction} >
                     <p>
                         This website is designed to help you reach your fitness goals and tap into your true potential.
                     </p>
@@ -46,7 +47,7 @@ const Home = () => {
                     <p>(There's also a <strong>shop</strong> too...)</p>
 
                     <p>Let's get started!</p>
-                </IntroductionCard>
+                </Card>
                 <NextSection to='/diet'>Next Section: Diet</NextSection>
             </IntroductionContainer>
             {/* Contains links to the author's social profiles */}

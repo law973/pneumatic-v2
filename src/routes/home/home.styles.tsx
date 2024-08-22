@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { Card } from "../../components/card/card.styles";
 import { Link } from "react-router-dom";
 
 // Styling for container of hello text, welcome text, and arrow
@@ -256,21 +255,6 @@ export const IntroductionContainer = styled.section`
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-`;
-
-// Styling for introduction card
-export const IntroductionCard = styled(Card)`
-    background-color: #00008f;
-    color: #fff;
-
-    ::selection {
-        background-color: #add8e6;
-        color: #000;
-    }
-
-    @media screen and (min-width: 576px) {
-
-    }
 `;
 
 export const NextSection = styled(Link)`

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { Card } from "../../components/card/card.styles";
 import { Link } from "react-router-dom";
 
 export const ToolsContainer = styled.div`
@@ -8,18 +7,8 @@ export const ToolsContainer = styled.div`
     background-color: #fec601;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
-`;
-
-export const ToolsCard = styled(Card)`
-    background-color: #fee485;
-    color: #000;
-
-    ::selection {
-        background-color: #b8860b;
-        color: #fff;
-    }
 `;
 
 export const NextSectionShop = styled(Link)`

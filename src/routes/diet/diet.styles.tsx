@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-import { Card } from "../../components/card/card.styles";
 import { Link } from "react-router-dom";
 
 export const DietContainer = styled.div`
@@ -8,18 +7,8 @@ export const DietContainer = styled.div`
     background-color: #06d6a0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
-`;
-
-export const DietCard = styled(Card)`
-    background-color: #9cfce3;
-    color: #000;
-
-    ::selection {
-        background-color: #006400;
-        color: #fff;
-    }
 `;
 
 export const NextSectionExercise = styled(Link)`
