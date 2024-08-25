@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-    border: 3px solid;
+    border: 2px solid;
     border-radius: 25px;
     box-shadow:	
         1.6px 1.6px 1.9px rgba(0, 0, 0, 0.018),
@@ -12,18 +12,48 @@ export const Card = styled.div`
 		32.4px 32.4px 37px rgba(0, 0, 0, 0.052),
 		70px 70px 80px rgba(0, 0, 0, 0.07);
 	display: inline-block;
-    padding: 0 25px;
+	max-width: 70vw;
+    padding: 0 15px;
 	text-align: left;
 	width: fit-content;
 
     p {
+		font-size: 1.15rem;
 	    max-width: 75ch;
 	    text-align: left;
 
+		/* Breakpoint (Small) */
 		@media screen and (min-width: 576px) {
-			
+			font-size: 1.75rem;
 		}
+
+		/* Breakpoint (Medium) */
+		@media screen and (min-width: 768px) {
+			/* font-size: */
+		}
+
+		/* Breakpoint (Large) */
+		@media screen and (min-width: 992px) {
+			/* font-size: */
+		}
+
+		/* Breakpoint (Extra Large) */
+		@media screen and (min-width: 1200px) {
+			/* font-size: */
+		}
+
+		/* Breakpoint (Extra Extra Large) */
+		@media screen and (min-width: 1400px) {
+			/* font-size: */
+		}
+
     }
+
+	/* Breakpoint (Small) */
+	@media screen and (min-width: 576px) {
+		border-width: 3px;
+		padding: 0 20px;
+	}
 `;
 
 export const IntroductionCard = styled(Card)`

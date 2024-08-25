@@ -259,11 +259,17 @@ export const IntroductionContainer = styled.section`
 
 export const NextSection = styled(Link)`
     color: #fff;
-    margin-top: 50px;
+    font-size: 1.15rem;
+    margin-top: 30px;
     text-decoration: none;
     transition: transform 0.25s linear;
 
     &:hover { 
         transform: scale(1.1); 
+    }
+
+    /* Breakpoint (Small) */
+    @media screen and (min-width: 576px) {
+        font-size: 1.75rem;
     }
 `;
