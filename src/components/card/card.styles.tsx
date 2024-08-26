@@ -17,42 +17,41 @@ export const Card = styled.div`
 	text-align: left;
 	width: fit-content;
 
-    p {
-		font-size: 1.15rem;
-	    max-width: 75ch;
-	    text-align: left;
-
-		/* Breakpoint (Small) */
-		@media screen and (min-width: 576px) {
-			font-size: 1.75rem;
-		}
-
-		/* Breakpoint (Medium) */
-		@media screen and (min-width: 768px) {
-			/* font-size: */
-		}
-
-		/* Breakpoint (Large) */
-		@media screen and (min-width: 992px) {
-			/* font-size: */
-		}
-
-		/* Breakpoint (Extra Large) */
-		@media screen and (min-width: 1200px) {
-			/* font-size: */
-		}
-
-		/* Breakpoint (Extra Extra Large) */
-		@media screen and (min-width: 1400px) {
-			/* font-size: */
-		}
-
-    }
+	/* Portrait Breakpoints -------------------- */
 
 	/* Breakpoint (Small) */
-	@media screen and (min-width: 576px) {
+	@media screen and (min-width: 576px) and (orientation: portrait) {
 		border-width: 3px;
 		padding: 0 20px;
+	}
+
+	/* ALSO AFFECTS LANDSCAPE ORIENTATION */
+	/* Breakpoint (Medium) */
+	@media screen and (min-width: 768px) {
+		padding: 0 25px;
+	}
+
+	/* Breakpoint (Large) */
+	@media screen and (min-width: 992px) {
+		max-width: 75vw;
+	}
+
+	/* Landscape Breakpoints -------------------- */
+
+	/* Landscape Breakpoint (Small) */
+	@media screen and (min-width: 576px) and (orientation: landscape) {
+		max-width: 80vw;
+	}
+
+	/* Landscape Breakpoint (Large) */
+	@media screen and (min-width: 992px) and (orientation: landscape) {
+		border-width: 3px;
+		max-width: 85vw;
+	}
+
+	/* Landscape Breakpoint (Extra Extra Large) */
+	@media screen and (min-width: 1400px) and (orientation: landscape) {
+		border-width: 4px;
 	}
 `;
 

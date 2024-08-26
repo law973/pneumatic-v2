@@ -29,7 +29,7 @@ export type HeaderProps = {
 
 const Header: React.FC<PropsWithChildren<HeaderProps>> = ({ children, headerType }) => {
     const CustomHeader = getHeader(headerType);
-    return <CustomHeader>{children}</CustomHeader>;
+    return <CustomHeader>{ children }</CustomHeader>;
 };
 
 export default Header;

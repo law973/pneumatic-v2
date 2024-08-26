@@ -8,7 +8,7 @@ export const GreetingContainer = styled.section`
     color: #fff;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
 
     ::selection {
@@ -253,7 +253,7 @@ export const IntroductionContainer = styled.section`
     background-color: #0000ff;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
 `;
 
@@ -268,8 +268,47 @@ export const NextSection = styled(Link)`
         transform: scale(1.1); 
     }
 
+    /* Portrait Breakpoints -------------------- */
+
     /* Breakpoint (Small) */
     @media screen and (min-width: 576px) {
         font-size: 1.75rem;
+    }
+
+    /* Breakpoint (Medium) */
+    @media screen and (min-width: 768px) {
+        font-size: 2rem;
+    }
+
+    /* Breakpoint (Large) */
+    @media screen and (min-width: 992px) {
+        font-size: 2.75rem;
+    }
+
+    /* Landscape Breakpoints -------------------- */
+
+    /* Landscape Breakpoint (Small) */
+    @media screen and (min-width: 576px) and (orientation: landscape) {
+        font-size: 1rem;
+    }
+
+    /* Landscape Breakpoint (Medium) */
+    @media screen and (min-width: 768px) and (orientation: landscape) {
+        font-size: 1.2rem;
+    }
+
+    /* Landscape Breakpoint (Large) */
+    @media screen and (min-width: 992px) and (orientation: landscape) {
+        font-size: 1.75rem;
+    }
+
+    /* Landscape Breakpoint (Extra Large) */
+    @media screen and (min-width: 1200px) and (orientation: landscape) {
+        font-size: 2.25rem;
+    }
+
+    /* Landscape Breakpoint (Extra Extra Large) */
+    @media screen and (min-width: 1400px) and (orientation: landscape) {
+        font-size: 2.5rem;
     }
 `;

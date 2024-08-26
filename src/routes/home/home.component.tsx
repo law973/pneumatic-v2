@@ -6,9 +6,14 @@ import {
     IntroductionContainer, 
     NextSection
 } from "./home.styles";
+
 import Card from "../../components/card/card.component";
 import { CARD_TYPE_CLASSES } from '../../components/card/card.component';
+
+import Paragraph from "../../components/paragraph/paragraph.component";
+
 import Footer from "../../components/footer/footer.component";
+
 import ArrowIcon from "../../components/arrow-icon/arrow-icon.component";
 import ArrowDown from "../../assets/arrow-down.component";
 
@@ -35,22 +40,22 @@ const Home = () => {
             {/* This section has a description of what the website provides */}
             <IntroductionContainer id="introduction">
                 <Card cardType={CARD_TYPE_CLASSES.introduction} >
-                    <p>
+                    <Paragraph>
                         This website is designed to help you reach your fitness goals and tap into your true potential.
-                    </p>
-                    <p>
+                    </Paragraph>
+                    <Paragraph>
                         The three main elements to improving your physical well-being are <strong>diet</strong>, <strong>exercise</strong>, and <strong>recovery</strong>. 
                         There are sections that will cover each element individually, and provide you with the information you'll need 
                         (and the <strong>tools</strong> you'll want) as you proceed on your fitness journey.
-                    </p>
+                    </Paragraph>
 
-                    <p>(There's also a <strong>shop</strong> too...)</p>
+                    <Paragraph>(There's also a <strong>shop</strong> too...)</Paragraph>
 
-                    <p>Let's get started!</p>
+                    <Paragraph>Let's get started!</Paragraph>
                 </Card>
                 <NextSection to='/diet'>Next Section: Diet</NextSection>
             </IntroductionContainer>
-            {/* Contains links to the author's social profiles */}
+            {/* Footer contains links to the author's social profiles */}
             <Footer />
         </>
     )
