@@ -1,7 +1,7 @@
 import { ToolsContainer, NextSectionShop } from "./tools.styles";
 
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
-import Header, { HEADER_TYPE_CLASSES } from "../../components/header/header.component";
+import Header, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
 import Hammer from "../../assets/hammer.component";
@@ -15,7 +15,7 @@ const Tools = () => {
     return (
         <ToolsContainer>
             <Card cardType={CARD_TYPE_CLASSES.tools}>
-                <Header headerType={HEADER_TYPE_CLASSES.primary}><Hammer/>&nbsp;Tools</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.displayHeadingOne}><Hammer/>&nbsp;Tools</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>The tools in this section will help in putting all of the knowledge provided previously to use.</Paragraph>
 
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>The Total Daily Energy Expenditure (TDEE) Calculator will give an estimate of the amount of calories you are burning each day, after the required information is submitted.</Paragraph>
@@ -26,20 +26,20 @@ const Tools = () => {
 
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>Sleep Time Recommendation will suggest a time to go to sleep at based on the time you wish to wake up. Alternatively, it can suggest a wake-up time based on when you are going to bed.</Paragraph>
 
-                <Header headerType={HEADER_TYPE_CLASSES.secondary}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here</Paragraph>
                 <Button>Testing</Button>
 
-                <Header headerType={HEADER_TYPE_CLASSES.secondary}><Target/>&nbsp;Calorie Goal</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}><Target/>&nbsp;Calorie Goal</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here too</Paragraph>
 
-                <Header headerType={HEADER_TYPE_CLASSES.secondary}>Macro Goal</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}>Macro Goal</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here three</Paragraph>
 
-                <Header headerType={HEADER_TYPE_CLASSES.secondary}>Plate Combination Creator</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}>Plate Combination Creator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here for</Paragraph>
 
-                <Header headerType={HEADER_TYPE_CLASSES.secondary}><Clock/>&nbsp;Sleep Time Recommendation</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}><Clock/>&nbsp;Sleep Time Recommendation</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here 5</Paragraph>
             </Card>
             <NextSectionShop to='/shop'>Next Section: Shop</NextSectionShop>

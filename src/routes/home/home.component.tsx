@@ -8,7 +8,7 @@ import {
 } from "./home.styles";
 
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
-import Header, { HEADER_TYPE_CLASSES } from "../../components/header/header.component";
+import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 import Footer from "../../components/footer/footer.component";
 
@@ -38,7 +38,7 @@ const Home = () => {
             {/* This section has a description of what the website provides */}
             <IntroductionContainer id="introduction">
                 <Card cardType={CARD_TYPE_CLASSES.introduction} >
-                    <Header headerType={HEADER_TYPE_CLASSES.primary}>Introduction</Header>
+                    <Heading headingType={HEADING_TYPE_CLASSES.headingOne}>Introduction</Heading>
                     <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.lead}>
                         This website is designed to help you reach your fitness goals and tap into your true potential.
                     </Paragraph>
