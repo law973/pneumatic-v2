@@ -259,7 +259,7 @@ export const IntroductionContainer = styled.section`
 
 export const NextSection = styled(Link)`
     color: #fff;
-    font-size: 1.15rem;
+    font-size: 1rem;
     margin-top: 30px;
     text-decoration: none;
     transition: transform 0.25s linear;
@@ -270,45 +270,5 @@ export const NextSection = styled(Link)`
 
     /* Portrait Breakpoints -------------------- */
 
-    /* Breakpoint (Small) */
-    @media screen and (min-width: 576px) {
-        font-size: 1.75rem;
-    }
-
-    /* Breakpoint (Medium) */
-    @media screen and (min-width: 768px) {
-        font-size: 2rem;
-    }
-
-    /* Breakpoint (Large) */
-    @media screen and (min-width: 992px) {
-        font-size: 2.75rem;
-    }
-
     /* Landscape Breakpoints -------------------- */
-
-    /* Landscape Breakpoint (Small) */
-    @media screen and (min-width: 576px) and (orientation: landscape) {
-        font-size: 1rem;
-    }
-
-    /* Landscape Breakpoint (Medium) */
-    @media screen and (min-width: 768px) and (orientation: landscape) {
-        font-size: 1.2rem;
-    }
-
-    /* Landscape Breakpoint (Large) */
-    @media screen and (min-width: 992px) and (orientation: landscape) {
-        font-size: 1.75rem;
-    }
-
-    /* Landscape Breakpoint (Extra Large) */
-    @media screen and (min-width: 1200px) and (orientation: landscape) {
-        font-size: 2.25rem;
-    }
-
-    /* Landscape Breakpoint (Extra Extra Large) */
-    @media screen and (min-width: 1400px) and (orientation: landscape) {
-        font-size: 2.5rem;
-    }
 `;

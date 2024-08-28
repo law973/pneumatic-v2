@@ -7,11 +7,9 @@ import {
     NextSection
 } from "./home.styles";
 
-import Card from "../../components/card/card.component";
-import { CARD_TYPE_CLASSES } from '../../components/card/card.component';
-
-import Paragraph from "../../components/paragraph/paragraph.component";
-
+import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
+import Header, { HEADER_TYPE_CLASSES } from "../../components/header/header.component";
+import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 import Footer from "../../components/footer/footer.component";
 
 import ArrowIcon from "../../components/arrow-icon/arrow-icon.component";
@@ -40,18 +38,19 @@ const Home = () => {
             {/* This section has a description of what the website provides */}
             <IntroductionContainer id="introduction">
                 <Card cardType={CARD_TYPE_CLASSES.introduction} >
-                    <Paragraph>
+                    <Header headerType={HEADER_TYPE_CLASSES.primary}>Introduction</Header>
+                    <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.lead}>
                         This website is designed to help you reach your fitness goals and tap into your true potential.
                     </Paragraph>
-                    <Paragraph>
+                    <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>
                         The three main elements to improving your physical well-being are <strong>diet</strong>, <strong>exercise</strong>, and <strong>recovery</strong>. 
                         There are sections that will cover each element individually, and provide you with the information you'll need 
                         (and the <strong>tools</strong> you'll want) as you proceed on your fitness journey.
                     </Paragraph>
 
-                    <Paragraph>(There's also a <strong>shop</strong> too...)</Paragraph>
+                    <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>(There's also a <strong>shop</strong> too...)</Paragraph>
 
-                    <Paragraph>Let's get started!</Paragraph>
+                    <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>Let's get started!</Paragraph>
                 </Card>
                 <NextSection to='/diet'>Next Section: Diet</NextSection>
             </IntroductionContainer>
