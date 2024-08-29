@@ -11,7 +11,6 @@ export const Card = styled.div`
 		18.5px 18.5px 21.2px rgba(0, 0, 0, 0.044),
 		32.4px 32.4px 37px rgba(0, 0, 0, 0.052),
 		70px 70px 80px rgba(0, 0, 0, 0.07);
-	display: inline-block;
 	max-width: 70vw;
     padding: 0 15px;
 	text-align: left;
@@ -32,7 +31,7 @@ export const Card = styled.div`
 	}
 
 	/* Breakpoint (Large) */
-	@media screen and (min-width: 992px) {
+	@media screen and (min-width: 992px) and (orientation: portrait) {
 		max-width: 75vw;
 	}
 
@@ -62,6 +61,10 @@ export const IntroductionCard = styled(Card)`
 	::selection {
 		background-color: #add8e6;
 		color: #000;
+	}
+
+	svg {
+		fill: #fff;
 	}
 `;
 

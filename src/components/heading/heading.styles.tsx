@@ -6,8 +6,8 @@ export const HeadingOne = styled.h1`
     font-size: 1.5rem;
 
     svg {
-        height: 27px;
-        width: 27px;
+        height: 24px;
+        width: 24px;
     }
 
     /* Breakpoints -------------------- */
@@ -15,6 +15,11 @@ export const HeadingOne = styled.h1`
     /* Breakpoint (Tablet Size) */
     @media screen and (min-width: 768px) {
         font-size: 2.125rem;
+
+        svg {
+            height: 30px;
+            width: 30px;
+        }
     }
 `;
 
@@ -24,8 +29,8 @@ export const HeadingTwo = styled.h2`
     font-size: 1.125rem;
 
     svg {
-        height: 20px;
-        width: 20px;
+        height: 18px;
+        width: 18px;
     }
 
     /* Breakpoints -------------------- */
@@ -35,7 +40,8 @@ export const HeadingTwo = styled.h2`
         font-size: 1.5rem;
 
         svg {
-            
+            height: 24px;
+            width: 24px;
         }
     }
 
@@ -44,7 +50,8 @@ export const HeadingTwo = styled.h2`
         font-size: 1.875rem;
 
         svg {
-            
+            height: 28px;
+            width: 28px;
         }
     }
 `;
@@ -66,7 +73,8 @@ export const HeadingThree = styled.h3`
         font-size: 1.25rem;
 
         svg {
-            
+            height: 20px;
+            width: 20px;
         }
     }
 
@@ -75,7 +83,8 @@ export const HeadingThree = styled.h3`
         font-size: 1.5rem;
 
         svg {
-            
+            height: 24px;
+            width: 24px;
         }
     }
 `;
@@ -86,8 +95,8 @@ export const DisplayHeadingOne = styled.h1`
     font-size: 1.875rem;
 
     svg {
-        height: 25px;
-        width: 25px;
+        height: 28px;
+        width: 28px;
     }
 
     /* Breakpoints -------------------- */
