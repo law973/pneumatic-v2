@@ -10,6 +10,7 @@ import Exercise from './routes/exercise/exercise.component';
 import Recovery from './routes/recovery/recovery.component';
 import Tools from './routes/tools/tools.component';
 import Shop from './routes/shop/shop.component';
+import Footer from './components/footer/footer.component';
 
 const App = () => {
 
@@ -17,7 +18,7 @@ const App = () => {
     <>
       <GlobalStyle />
       <Routes>
-        <Route path='/'>
+        <Route path='/' element={<Footer />}>
           <Route index element={<Home />} />
           <Route path='diet' element={<Diet />} />
           <Route path='exercise' element={<Exercise />} />

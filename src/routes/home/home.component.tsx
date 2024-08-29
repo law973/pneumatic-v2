@@ -10,7 +10,6 @@ import {
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
-import Footer from "../../components/footer/footer.component";
 
 import ArrowIcon from "../../components/arrow-icon/arrow-icon.component";
 import ArrowDown from "../../assets/arrow-down.component";
@@ -54,8 +53,6 @@ const Home = () => {
                 </Card>
                 <NextSection to='/diet'>Next Section: Diet</NextSection>
             </IntroductionContainer>
-            {/* Footer contains links to the author's social profiles */}
-            <Footer />
         </>
     )
 };

@@ -16,7 +16,7 @@ const Tools = () => {
         <ToolsContainer>
             <Card cardType={CARD_TYPE_CLASSES.tools}>
                 <Header headingType={HEADING_TYPE_CLASSES.displayHeadingOne}><Hammer/>&nbsp;Tools</Header>
-                <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>The tools in this section will help in putting all of the knowledge provided previously to use.</Paragraph>
+                <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.lead}>The tools in this section will help in putting all of the knowledge provided previously to use.</Paragraph>
 
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>The Total Daily Energy Expenditure (TDEE) Calculator will give an estimate of the amount of calories you are burning each day, after the required information is submitted.</Paragraph>
 
@@ -26,20 +26,20 @@ const Tools = () => {
 
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>Sleep Time Recommendation will suggest a time to go to sleep at based on the time you wish to wake up. Alternatively, it can suggest a wake-up time based on when you are going to bed.</Paragraph>
 
-                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here</Paragraph>
                 <Button>Testing</Button>
 
-                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}><Target/>&nbsp;Calorie Goal</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Target/>&nbsp;Calorie Goal</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here too</Paragraph>
 
-                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}>Macro Goal</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}>Macro Goal</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here three</Paragraph>
 
-                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}>Plate Combination Creator</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}>Plate Combination Creator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here for</Paragraph>
 
-                <Header headingType={HEADING_TYPE_CLASSES.headingTwo}><Clock/>&nbsp;Sleep Time Recommendation</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Clock/>&nbsp;Sleep Time Recommendation</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here 5</Paragraph>
             </Card>
             <NextSectionShop to='/shop'>Next Section: Shop</NextSectionShop>
