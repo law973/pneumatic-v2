@@ -1,11 +1,24 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
+const BaseButton = styled.button`
+    background: none;
+    border: none;
+    cursor: pointer;
+`;
+
+export const ArrowButton = styled(BaseButton)`
+    svg {
+        color: white;
+        height: auto;
+		width: 102px;
+    }
+`;
+
+export const ToolsButton = styled(BaseButton)`
     background-color: #0000ff;
     border: 2px solid #fff;
     border-radius: 5px;
     color: #fff;
-    cursor: pointer;
     font-family: inherit;
     font-size: 1.5rem;
     /* margin-top: -30px; */

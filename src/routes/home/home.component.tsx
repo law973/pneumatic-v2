@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import { 
     GreetingContainer, 
     GreetingHello, 
@@ -10,11 +12,20 @@ import {
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../../components/button/button.component";
 
-import ArrowIcon from "../../components/arrow-icon/arrow-icon.component";
 import ArrowDown from "../../assets/arrow-down.component";
 
 const Home = () => {
+
+    const introSection = useRef<HTMLDivElement>(null);
+
+    const scrollTo = () => { 
+        if (introSection.current) {
+            window.scrollTo({ top: introSection.current.offsetTop });
+        } 
+    };
+
     return (
         <>
             <GreetingContainer>
@@ -31,11 +42,13 @@ const Home = () => {
                 </header>
                 {/* The arrow leading to the introduction page is located here */}
                 <GreetingArrow>
-                    <ArrowIcon href="#introduction" title="Introduction" icon={<ArrowDown />}/>
+                    <Button buttonType={BUTTON_TYPE_CLASSES.arrow} onClick={scrollTo} title="Introduction">
+                        <ArrowDown />
+                    </Button>
                 </GreetingArrow>
             </GreetingContainer>
             {/* This section has a description of what the website provides */}
-            <IntroductionContainer id="introduction">
+            <IntroductionContainer id="introduction" ref={introSection}>
                 <Card cardType={CARD_TYPE_CLASSES.introduction} >
                     <Heading headingType={HEADING_TYPE_CLASSES.headingOne}>Introduction</Heading>
                     <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.lead}>

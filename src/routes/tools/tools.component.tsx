@@ -3,13 +3,12 @@ import { ToolsContainer, NextSectionShop } from "./tools.styles";
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Header, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../../components/button/button.component";
 
 import Hammer from "../../assets/hammer.component";
 import Algebra from "../../assets/algebra.component";
 import Target from "../../assets/target.component";
 import Clock from "../../assets/clock.component";
-
-import Button from "../../components/button/button.component";
 
 const Tools = () => {
     return (
@@ -28,7 +27,7 @@ const Tools = () => {
 
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here</Paragraph>
-                <Button>Testing</Button>
+                <Button buttonType={BUTTON_TYPE_CLASSES.tools}>Testing</Button>
 
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Target/>&nbsp;Calorie Goal</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here too</Paragraph>
@@ -39,7 +38,7 @@ const Tools = () => {
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}>Plate Combination Creator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here for</Paragraph>
 
-                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Clock/>&nbsp;Sleep Time Recommendation</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Clock/>&nbsp;Sleep Calculator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here 5</Paragraph>
             </Card>
             <NextSectionShop to='/shop'>Next Section: Shop</NextSectionShop>
