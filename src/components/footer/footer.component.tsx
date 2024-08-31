@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import { FooterContainer, FooterIconsContainer } from "./footer.styles";
+import Navigation from "../navigation/navigation.component";
 
 import FooterIcon from "../footer-icon/footer-icon.component";
 
@@ -11,6 +12,7 @@ import GitHubLogo from "../../assets/github-logo.component";
 const Footer = () => {
     return (
         <>
+            <Navigation></Navigation>
             <Outlet />
             <FooterContainer>
                 {/* Links to the author's social profile are contained here */}

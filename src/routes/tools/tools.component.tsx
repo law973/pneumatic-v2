@@ -3,7 +3,7 @@ import { ToolsContainer, NextSectionShop } from "./tools.styles";
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Header, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
-import Button, { BUTTON_TYPE_CLASSES } from "../../components/button/button.component";
+import TDEEForm from "../../components/tdee-form/tdee-form.component";
 
 import Hammer from "../../assets/hammer.component";
 import Algebra from "../../assets/algebra.component";
@@ -25,19 +25,25 @@ const Tools = () => {
 
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>Sleep Time Recommendation will suggest a time to go to sleep at based on the time you wish to wake up. Alternatively, it can suggest a wake-up time based on when you are going to bed.</Paragraph>
 
-                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
-                <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here</Paragraph>
-                <Button buttonType={BUTTON_TYPE_CLASSES.tools}>Testing</Button>
+            </Card>
 
+            <Card cardType={CARD_TYPE_CLASSES.tools}>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
+                <TDEEForm />
+            </Card>
+            <Card cardType={CARD_TYPE_CLASSES.tools}>
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Target/>&nbsp;Calorie Goal</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here too</Paragraph>
-
+            </Card>
+            <Card cardType={CARD_TYPE_CLASSES.tools}>
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}>Macro Goal</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here three</Paragraph>
-
+            </Card>
+            <Card cardType={CARD_TYPE_CLASSES.tools}>
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}>Plate Combination Creator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here for</Paragraph>
-
+            </Card>
+            <Card cardType={CARD_TYPE_CLASSES.tools}>
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Clock/>&nbsp;Sleep Calculator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here 5</Paragraph>
             </Card>
