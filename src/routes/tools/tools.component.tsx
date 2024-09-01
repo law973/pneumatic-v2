@@ -1,9 +1,10 @@
 import { ToolsContainer, NextSectionShop } from "./tools.styles";
 
+import { Link } from "react-router-dom";
+
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Header, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
-import TDEEForm from "../../components/tdee-form/tdee-form.component";
 
 import Hammer from "../../assets/hammer.component";
 import Algebra from "../../assets/algebra.component";
@@ -29,7 +30,7 @@ const Tools = () => {
 
             <Card cardType={CARD_TYPE_CLASSES.tools}>
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
-                <TDEEForm />
+                <Link to='/tools/tdee-calculator'>Click here</Link>
             </Card>
             <Card cardType={CARD_TYPE_CLASSES.tools}>
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Target/>&nbsp;Calorie Goal</Header>

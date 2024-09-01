@@ -11,6 +11,7 @@ import Recovery from './routes/recovery/recovery.component';
 import Tools from './routes/tools/tools.component';
 import Shop from './routes/shop/shop.component';
 import Footer from './components/footer/footer.component';
+import TDEECalculator from './routes/tdee-calculator/tdee-calculator.component';
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='exercise' element={<Exercise />} />
           <Route path='recovery' element={<Recovery />} />
           <Route path='tools' element={<Tools />} />
+          <Route path='tools/tdee-calculator' element={<TDEECalculator />} />
           <Route path='shop' element={<Shop />} />
         </Route>
       </Routes>

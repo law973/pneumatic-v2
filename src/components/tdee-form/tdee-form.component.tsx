@@ -4,7 +4,7 @@ const TDEEForm = () => {
             <form id="form_tdee">
                 <fieldset>
                     <legend>Gender</legend>
-                    <input type="radio" id="gender_m" name="gender" value="male" checked={true} />
+                    <input type="radio" id="gender_m" name="gender" value="male" defaultChecked={true} />
                     <label htmlFor="gender_m">Male</label>
                     &nbsp;
                     <input type="radio" id="gender_f" name="gender" value="female"></input>
@@ -18,7 +18,7 @@ const TDEEForm = () => {
                 <input type="number" id="weight" min="0" max="1400" placeholder="lb" required /><br/>
 
                 <label htmlFor="height">Height</label>
-                <select name="height" id="height">
+                <select name="height" id="height" defaultValue={"height_5_10"}>
                     <option value="height_4_7">4′ 7″</option>
                     <option value="height_4_8">4′ 8″</option>
                     <option value="height_4_9">4′ 9″</option>
@@ -34,7 +34,7 @@ const TDEEForm = () => {
                     <option value="height_5_7">5′ 7″</option>
                     <option value="height_5_8">5′ 8″</option>
                     <option value="height_5_9">5′ 9″</option>
-                    <option value="height_5_10" selected>5′ 10″</option>
+                    <option value="height_5_10">5′ 10″</option>
                     <option value="height_5_11">5′ 11″</option>
                     <option value="height_6_0">6′</option>
                     <option value="height_6_1">6′ 1″</option>
