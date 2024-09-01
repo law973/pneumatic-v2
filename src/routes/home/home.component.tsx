@@ -5,9 +5,10 @@ import {
     GreetingHello, 
     GreetingWelcome, 
     GreetingArrow,
-    IntroductionContainer, 
-    NextSection
+    IntroductionContainer
 } from "./home.styles";
+
+import { Link } from "react-router-dom";
 
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
@@ -48,7 +49,7 @@ const Home = () => {
                 </GreetingArrow>
             </GreetingContainer>
             {/* This section has a description of what the website provides */}
-            <IntroductionContainer id="introduction" ref={introSection}>
+            <IntroductionContainer ref={introSection}>
                 <Card cardType={CARD_TYPE_CLASSES.introduction} >
                     <Heading headingType={HEADING_TYPE_CLASSES.headingOne}>Introduction</Heading>
                     <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.lead}>
@@ -64,7 +65,7 @@ const Home = () => {
 
                     <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>Let's get started!</Paragraph>
                 </Card>
-                <NextSection to='/diet'>Next Section: Diet</NextSection>
+                <Link to='/diet'>Next Section: Diet</Link>
             </IntroductionContainer>
         </>
     )
