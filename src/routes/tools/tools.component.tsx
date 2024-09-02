@@ -8,8 +8,8 @@ import Header, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.c
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
 import Hammer from "../../assets/hammer.component";
-import Algebra from "../../assets/algebra.component";
-import Target from "../../assets/target.component";
+import Algebra from "../../assets/algebra/algebra.component";
+import Target from "../../assets/target/target.component";
 import Clock from "../../assets/clock.component";
 
 const Tools = () => {

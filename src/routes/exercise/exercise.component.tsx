@@ -6,10 +6,10 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
-import Running from "../../assets/running.component";
+import Running from "../../assets/running/running.component";
 import Dumbbell from "../../assets/dumbbell.component";
 import Progressive from "../../assets/progressive.component";
-import Heart from "../../assets/heart.component";
+import Heart from "../../assets/heart/heart.component";
 
 const Exercise = () => {
     return (
