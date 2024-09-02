@@ -1,4 +1,6 @@
-import { ExerciseContainer, NextSectionRecovery } from "./exercise.styles";
+import { ExerciseContainer } from "./exercise.styles";
+
+import { SectionLink } from "../../components/section-link/section-link.styles";
 
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
@@ -25,7 +27,7 @@ const Exercise = () => {
                 <Heading headingType={HEADING_TYPE_CLASSES.headingOne}><Heart/>&nbsp;Cardio</Heading>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.lead}>Some of the most important muscle tissue to work belongs to a part of the body you can't see: your heart.</Paragraph>
             </Card>
-            <NextSectionRecovery to='/recovery'>Next Section: Recovery</NextSectionRecovery>
+            <SectionLink to='/recovery'>Next Section: Recovery</SectionLink>
         </ExerciseContainer>
     );
 };

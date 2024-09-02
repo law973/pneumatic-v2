@@ -1,6 +1,7 @@
-import { ToolsContainer, NextSectionShop } from "./tools.styles";
+import { ToolsContainer } from "./tools.styles";
 
 import { Link } from "react-router-dom";
+import { SectionLink } from "../../components/section-link/section-link.styles";
 
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Header, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
@@ -48,7 +49,7 @@ const Tools = () => {
                 <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Clock/>&nbsp;Sleep Calculator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here 5</Paragraph>
             </Card>
-            <NextSectionShop to='/shop'>Next Section: Shop</NextSectionShop>
+            <SectionLink to='/shop'>Next Section: Shop</SectionLink>
         </ToolsContainer>
     );
 };

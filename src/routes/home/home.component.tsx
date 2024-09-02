@@ -8,7 +8,7 @@ import {
     IntroductionContainer
 } from "./home.styles";
 
-import { Link } from "react-router-dom";
+import { SectionLink } from "../../components/section-link/section-link.styles";
 
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
@@ -65,7 +65,7 @@ const Home = () => {
 
                     <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>Let's get started!</Paragraph>
                 </Card>
-                <Link to='/diet'>Next Section: Diet</Link>
+                <SectionLink to='/diet'>Next Section: Diet</SectionLink>
             </IntroductionContainer>
         </>
     )

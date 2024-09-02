@@ -1,4 +1,6 @@
-import { DietContainer, NextSectionExercise } from "./diet.styles";
+import { DietContainer } from "./diet.styles";
+
+import { SectionLink } from "../../components/section-link/section-link.styles";
 
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
@@ -27,7 +29,7 @@ const Diet = () => {
 
                 {/* <Header headerType={HEADER_TYPE_CLASSES.tertiary}><Cutlery />&nbsp;Test</Header> */}
             </Card>
-            <NextSectionExercise to='/exercise'>Next Section: Exercise</NextSectionExercise>
+            <SectionLink to='/exercise'>Next Section: Exercise</SectionLink>
         </DietContainer>
     );
 };
