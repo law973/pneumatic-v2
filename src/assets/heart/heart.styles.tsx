@@ -7,7 +7,6 @@ export const StyledHeart = styled.svg`
 
     @keyframes heartBeat {
         50% { transform: scale(1.1); }
-        100% { transform: scale(1); }
     }
 
     /* Icon will not scale if reduced motion is preferred */

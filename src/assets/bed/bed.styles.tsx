@@ -10,7 +10,6 @@ export const StyledBed = styled.svg`
     @keyframes dozeOff {
         40% { opacity: 0; }
         60% { opacity: 0; }
-        100% { opacity: 1; }
     }
 
     /* Icon will not scale if reduced motion is preferred */
