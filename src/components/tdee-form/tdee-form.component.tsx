@@ -60,7 +60,7 @@ const TDEEForm = () => {
                     <option value="activity_athlete">Athlete (2x per day)</option>
                 </select><br/><br/>
 
-                <input type="submit" value="Calculate" />
+                <input type="submit" value="Calculate" disabled />
             </form>
             <p>Estimated maintenance calories: <span id="tdee_output"></span></p>
         </>
