@@ -6,8 +6,8 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
-import Cutlery from "../../assets/cutlery.component";
-import FastFood from "../../assets/fast-food.component";
+import Cutlery from "../../assets/cutlery/cutlery.component";
+import FastFood from "../../assets/fast-food/fast-food.component";
 
 const Diet = () => {
     return (

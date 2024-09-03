@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const StyledProgressive = styled.svg`
+export const StyledMacroSplit = styled.svg`
     transition: transform 1s;
 
     &:hover {
-        transform: translate(10%, -10%);
+        transform: rotate(180deg);
     }
 
-    /* Icon will not translate if reduced motion is preferred */
+    /* Icon will not rotate if reduced motion is preferred */
     @media (prefers-reduced-motion: reduce) {
         &:hover {
             transform: none;

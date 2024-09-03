@@ -7,10 +7,12 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Header, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
-import Hammer from "../../assets/hammer.component";
+import Hammer from "../../assets/hammer/hammer.component";
 import Algebra from "../../assets/algebra/algebra.component";
 import Target from "../../assets/target/target.component";
-import Clock from "../../assets/clock.component";
+import MacroSplit from "../../assets/macro-split/macro-split.component";
+import WeightPlate from "../../assets/weight-plate/weight-plate.component";
+import Clock from "../../assets/clock/clock.component";
 
 const Tools = () => {
     return (
@@ -38,11 +40,11 @@ const Tools = () => {
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here too</Paragraph>
             </Card>
             <Card cardType={CARD_TYPE_CLASSES.tools}>
-                <Header headingType={HEADING_TYPE_CLASSES.headingOne}>Macro Goal</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><MacroSplit/>&nbsp;Macro Goal</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here three</Paragraph>
             </Card>
             <Card cardType={CARD_TYPE_CLASSES.tools}>
-                <Header headingType={HEADING_TYPE_CLASSES.headingOne}>Plate Combination Creator</Header>
+                <Header headingType={HEADING_TYPE_CLASSES.headingOne}><WeightPlate/>&nbsp;Plate Combination Creator</Header>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>More needed here for</Paragraph>
             </Card>
             <Card cardType={CARD_TYPE_CLASSES.tools}>
