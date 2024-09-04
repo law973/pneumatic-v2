@@ -6,8 +6,8 @@ export const GreetingContainer = styled.section`
     color: #fff;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     justify-content: center;
+    min-height: 100vh;
 
     ::selection {
         background-color: #fff;
@@ -252,8 +252,10 @@ export const IntroductionContainer = styled.section`
     color: #fff;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 30px;
+    padding-top: 75px;
 
     a {
         color: #fff;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TDEECalculatorContainer = styled.div`
+export const MacroSplitContainer = styled.div`
     align-items: center;
     background-color: #fec601;
     display: flex;

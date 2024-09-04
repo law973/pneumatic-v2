@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledMacroSplit = styled.svg`
+export const StyledPieChart = styled.svg`
     transition: transform 1s;
 
     &:hover {
