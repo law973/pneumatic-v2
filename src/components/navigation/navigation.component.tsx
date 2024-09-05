@@ -1,11 +1,21 @@
-import { NavigationContainer, NavigationLogoContainer, NavigationLinksContainer } from "./navigation.styles";
+import { 
+    NavigationContainer, 
+    SmallLogoContainer, 
+    LargeLogoContainer,
+    NavigationLinksContainer 
+} from "./navigation.styles";
 
 import { Link } from "react-router-dom";
+
+import HamburgerButton from "../hamburger-button/hamburger-button.component";
 
 const Navigation = () => {
     return (
         <NavigationContainer>
-            <NavigationLogoContainer>P</NavigationLogoContainer>
+            <SmallLogoContainer>P</SmallLogoContainer>
+            <LargeLogoContainer>Pneumatic</LargeLogoContainer>
+
+            <HamburgerButton />
 
             <NavigationLinksContainer>
                 <Link to='/'>Home</Link>

@@ -1,10 +1,12 @@
+import { HamburgerButtonContainer } from "./hamburger-button.styles";
+
 const HamburgerButton = () => {
     return (
-        <div title="Navigation Menu">
+        <HamburgerButtonContainer title="Navigation Menu">
 			<div></div>
 			<div></div>
 			<div></div>
-		</div>
+		</HamburgerButtonContainer>
     );
 };
 
