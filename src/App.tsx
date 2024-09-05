@@ -11,6 +11,10 @@ import Recovery from './routes/recovery/recovery.component';
 import Tools from './routes/tools/tools.component';
 import Shop from './routes/shop/shop.component';
 import Footer from './components/footer/footer.component';
+
+import StrengthTraining from './routes/strength-training/strength-training.component';
+import Cardio from './routes/cardio/cardio.component';
+
 import TDEECalculator from './routes/tdee-calculator/tdee-calculator.component';
 import CalorieGoal from './routes/calorie-goal/calorie-goal.component';
 import MacroSplit from './routes/macro-split/macro-split.component';
@@ -27,6 +31,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path='diet' element={<Diet />} />
           <Route path='exercise' element={<Exercise />} />
+          <Route path='exercise/strength-training' element={<StrengthTraining />} />
+          <Route path='exercise/cardio' element={<Cardio />} />
           <Route path='recovery' element={<Recovery />} />
           <Route path='tools' element={<Tools />} />
           <Route path='tools/tdee-calculator' element={<TDEECalculator />} />

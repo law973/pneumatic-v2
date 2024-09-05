@@ -35,23 +35,23 @@ const Tools = () => {
             <div>
                 <Card cardType={CARD_TYPE_CLASSES.tools}>
                     <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Algebra/>&nbsp;<abbr title="Total Daily Energy Expenditure">TDEE</abbr>&nbsp;Calculator</Header>
-                    <Link to='/tools/tdee-calculator'>Click here</Link>
+                    <Link to='tdee-calculator'>Click here</Link>
                 </Card>
                 <Card cardType={CARD_TYPE_CLASSES.tools}>
                     <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Target/>&nbsp;Calorie Goal</Header>
-                    <Link to='/tools/calorie-goal'>Click here</Link>
+                    <Link to='calorie-goal'>Click here</Link>
                 </Card>
                 <Card cardType={CARD_TYPE_CLASSES.tools}>
                     <Header headingType={HEADING_TYPE_CLASSES.headingOne}><PieChart />&nbsp;Macro Split</Header>
-                    <Link to='/tools/macro-split'>Click here</Link>
+                    <Link to='macro-split'>Click here</Link>
                 </Card>
                 <Card cardType={CARD_TYPE_CLASSES.tools}>
                     <Header headingType={HEADING_TYPE_CLASSES.headingOne}><WeightPlate/>&nbsp;Plate Combos</Header>
-                    <Link to='/tools/plate-combos'>Click here</Link>
+                    <Link to='plate-combos'>Click here</Link>
                 </Card>
                 <Card cardType={CARD_TYPE_CLASSES.tools}>
                     <Header headingType={HEADING_TYPE_CLASSES.headingOne}><Clock/>&nbsp;Sleep Calculator</Header>
-                    <Link to='/tools/sleep-calculator'>Click here</Link>
+                    <Link to='sleep-calculator'>Click here</Link>
                 </Card>
             </div>
             <SectionLink to='/shop'>Next Section: Shop</SectionLink>
