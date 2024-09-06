@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NavigationContainer = styled.div`
+    align-items: center;
     background-color: rgba(0, 0, 255, 0.5);
     display: flex;
     height: 50px;
@@ -33,7 +34,7 @@ export const LargeLogoContainer = styled(BaseLogoContainer)`
     }
 `;
 
-export const NavigationLinksContainer = styled.div`
+export const NavigationLinksContainer = styled.nav`
     align-items: center;
     display: flex;
     justify-content: space-between;
