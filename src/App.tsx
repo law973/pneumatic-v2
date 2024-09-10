@@ -7,19 +7,17 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './routes/home/home.component';
 import Diet from './routes/diet/diet.component';
 import Exercise from './routes/exercise/exercise.component';
-import Recovery from './routes/recovery/recovery.component';
-import Tools from './routes/tools/tools.component';
-import Shop from './routes/shop/shop.component';
-import Footer from './components/footer/footer.component';
-
 import StrengthTraining from './routes/strength-training/strength-training.component';
 import Cardio from './routes/cardio/cardio.component';
-
+import Recovery from './routes/recovery/recovery.component';
+import Tools from './routes/tools/tools.component';
 import TDEECalculator from './routes/tdee-calculator/tdee-calculator.component';
 import CalorieGoal from './routes/calorie-goal/calorie-goal.component';
 import MacroSplit from './routes/macro-split/macro-split.component';
 import PlateCombos from './routes/plate-combos/plate-combos.component';
 import SleepCalculator from './routes/sleep-calculator/sleep-calculator.component';
+import Shop from './routes/shop/shop.component';
+import Footer from './components/footer/footer.component';
 
 const App = () => {
 

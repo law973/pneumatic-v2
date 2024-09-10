@@ -6,7 +6,6 @@ export const SectionLink = styled(Link)`
     font-size: 1rem;
     margin-top: 30px;
     text-decoration: none;
-    transition: transform 0.25s linear;
 
     &:hover { 
         text-decoration: underline;

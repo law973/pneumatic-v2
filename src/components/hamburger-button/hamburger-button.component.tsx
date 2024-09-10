@@ -1,17 +1,19 @@
 import { HamburgerButtonContainer } from "./hamburger-button.styles";
 
-import { useState } from "react";
+import { useContext } from "react";
+
+import { MenuContext } from "../../contexts/menu.context";
 
 const HamburgerButton = () => {
-	const [isActive, setActive] = useState(false);
+	const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
 
 	const toggleMenu = () => {
-		setActive(!isActive);
-	}
+		setIsMenuOpen(!isMenuOpen);
+	};
 
     return (
         <HamburgerButtonContainer 
-			className={isActive ? 'active' : ''}
+			className={isMenuOpen ? 'active' : ''}
 			onClick={toggleMenu} 
 			title="Navigation Menu"
 		>

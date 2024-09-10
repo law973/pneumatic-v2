@@ -2,11 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-
-    color: #fff;
-    background-color: #000;
+        background-color: #000;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
     }
 
     html {
@@ -18,11 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        margin: 0;
         display: flex;
-        place-items: center;
-        min-width: 320px;
+        margin: 0;
         min-height: 100vh;
+        min-width: 320px;
+        place-items: center;
     }
 
     * {
