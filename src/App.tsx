@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import PageTitle from './components/page-title/page-title.component';
 
+import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
 import Diet from './routes/diet/diet.component';
 import Exercise from './routes/exercise/exercise.component';
@@ -19,7 +20,6 @@ import MacroSplit from './routes/macro-split/macro-split.component';
 import PlateCombos from './routes/plate-combos/plate-combos.component';
 import SleepCalculator from './routes/sleep-calculator/sleep-calculator.component';
 import Shop from './routes/shop/shop.component';
-import Footer from './components/footer/footer.component';
 
 const App = () => {
 
@@ -27,7 +27,7 @@ const App = () => {
     <>
       <GlobalStyle />
       <Routes>
-        <Route path='/' element={<Footer />}>
+        <Route path='/' element={<Navigation />}>
           <Route index element={
               <>
                 <PageTitle title='Pneumatic - Fitness Information & Tools' />
