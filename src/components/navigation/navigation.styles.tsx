@@ -20,6 +20,9 @@ const BaseLogoContainer = styled.div`
     font-size: 2rem;
     font-style: italic;
     font-weight: bold;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
 `;
 
 export const SmallLogoContainer = styled(BaseLogoContainer)`

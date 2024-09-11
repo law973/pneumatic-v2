@@ -4,6 +4,8 @@ import { GlobalStyle } from './global.styles';
 
 import { Routes, Route } from 'react-router-dom';
 
+import PageTitle from './components/page-title/page-title.component';
+
 import Home from './routes/home/home.component';
 import Diet from './routes/diet/diet.component';
 import Exercise from './routes/exercise/exercise.component';
@@ -26,19 +28,97 @@ const App = () => {
       <GlobalStyle />
       <Routes>
         <Route path='/' element={<Footer />}>
-          <Route index element={<Home />} />
-          <Route path='diet' element={<Diet />} />
-          <Route path='exercise' element={<Exercise />} />
-          <Route path='exercise/strength-training' element={<StrengthTraining />} />
-          <Route path='exercise/cardio' element={<Cardio />} />
-          <Route path='recovery' element={<Recovery />} />
-          <Route path='tools' element={<Tools />} />
-          <Route path='tools/tdee-calculator' element={<TDEECalculator />} />
-          <Route path='tools/calorie-goal' element={<CalorieGoal />} />
-          <Route path='tools/macro-split' element={<MacroSplit />} />
-          <Route path='tools/plate-combos' element={<PlateCombos />} />
-          <Route path='tools/sleep-calculator' element={<SleepCalculator />} />
-          <Route path='shop' element={<Shop />} />
+          <Route index element={
+              <>
+                <PageTitle title='Pneumatic - Fitness Information & Tools' />
+                <Home />
+              </>
+            } 
+          />
+          <Route path='diet' element={
+              <>
+                <PageTitle title='Diet - Pneumatic' />
+                <Diet />
+              </>
+            } 
+          />
+          <Route path='exercise' element={
+              <>
+                <PageTitle title='Exercise - Pneumatic' />
+                <Exercise />
+              </>
+            } 
+          />
+          <Route path='exercise/strength-training' element={
+              <>
+                <PageTitle title='Strength Training - Pneumatic' />
+                <StrengthTraining />
+              </>
+            } 
+          />
+          <Route path='exercise/cardio' element={
+              <>
+                <PageTitle title='Cardio - Pneumatic' />
+                <Cardio />
+              </>
+            } 
+          />
+          <Route path='recovery' element={
+              <>
+                <PageTitle title='Recovery - Pneumatic' />
+                <Recovery />
+              </>
+            } 
+          />
+          <Route path='tools' element={
+              <>
+                <PageTitle title='Tools - Pneumatic' />
+                <Tools />
+              </>
+            } 
+          />
+          <Route path='tools/tdee-calculator' element={
+              <>
+                <PageTitle title='TDEE Calculator - Pneumatic' />
+                <TDEECalculator />
+              </>
+            } 
+          />
+          <Route path='tools/calorie-goal' element={
+              <>
+                <PageTitle title='Calorie Goal - Pneumatic' />
+                <CalorieGoal />
+              </>
+            } 
+          />
+          <Route path='tools/macro-split' element={
+              <>
+                <PageTitle title='Macro Split - Pneumatic' />
+                <MacroSplit />
+              </>
+            } 
+          />
+          <Route path='tools/plate-combos' element={
+              <>
+                <PageTitle title='Plate Combos - Pneumatic' />
+                <PlateCombos />
+              </>
+            } 
+          />
+          <Route path='tools/sleep-calculator' element={
+              <>
+                <PageTitle title='Sleep Calculator - Pneumatic' />
+                <SleepCalculator />
+              </>
+            } 
+          />
+          <Route path='shop' element={
+              <>
+                <PageTitle title='Shop - Pneumatic' />
+                <Shop />
+              </>
+            } 
+          />
         </Route>
       </Routes>
     </>
