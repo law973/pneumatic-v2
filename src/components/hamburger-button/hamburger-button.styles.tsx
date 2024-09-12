@@ -7,7 +7,6 @@ export const HamburgerButtonContainer = styled.div`
     height: 2rem;
     justify-content: space-around;
     width: 2rem;
-    z-index: 10;
 
     div {
         background-color: #fff;
