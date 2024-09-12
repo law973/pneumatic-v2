@@ -7,9 +7,10 @@ export const FooterIconContainer = styled.a`
 
     svg {
         fill: #fff;
-        transition: transform 0.25s linear;
+        transition: fill 0.25s linear, transform 0.25s linear;
         
         &:hover { 
+            fill: #ebebeb;
             transform: scale(1.1); 
         }
     }

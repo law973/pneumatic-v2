@@ -5,15 +5,13 @@ import NavigationMenu from "../../components/navigation-menu/navigation-menu.com
 import Footer from "../../components/footer/footer.component";
 
 // Navigation bar appears on every page
-const Navigation = () => {
-    return (
-        <>
-            <NavigationBar />
-            <NavigationMenu />
-            <Outlet />
-            <Footer />
-        </>
-    );
-};
+const Navigation = () => (
+    <>
+        <NavigationBar />
+        <NavigationMenu />
+        <Outlet />
+        <Footer />
+    </>
+);
 
 export default Navigation;

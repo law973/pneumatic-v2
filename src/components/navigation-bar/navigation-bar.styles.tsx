@@ -32,6 +32,14 @@ const BaseLogoContainer = styled(Link)`
     user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
+
+    &:hover:not(:active) {
+        transform: scale(0.975);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 `;
 
 export const SmallLogoContainer = styled(BaseLogoContainer)`
@@ -50,7 +58,7 @@ export const NavigationBarLinksContainer = styled.nav`
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 600px;
 
     a {
         color: #fff;
