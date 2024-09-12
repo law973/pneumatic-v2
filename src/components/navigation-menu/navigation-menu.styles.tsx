@@ -32,9 +32,13 @@ export const NavigationMenuContainer = styled.nav`
                 color: #fff;
                 text-decoration: none;
 
-                &:hover {
+                &:hover, &:active {
                     color: #ebebeb;
                     text-decoration: underline #ebebeb;
+                }
+
+                &:active {
+                    transform: translateY(0.1rem);
                 }
             }
         }

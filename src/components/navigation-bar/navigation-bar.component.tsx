@@ -43,8 +43,8 @@ const NavigationBar = () => {
         <NavigationBarContainer
             className={isScrollingUp ? 'active' : ''}
         >
-            <SmallLogoContainer to='/'>P</SmallLogoContainer>
-            <LargeLogoContainer to='/'>Pneumatic</LargeLogoContainer>
+            <SmallLogoContainer to='/' title="Home">P</SmallLogoContainer>
+            <LargeLogoContainer to='/' title="Home">Pneumatic</LargeLogoContainer>
 
             <HamburgerButton />
 
