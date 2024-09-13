@@ -22,9 +22,7 @@ export const NavigationBarContainer = styled.div`
 `;
 
 const BaseLogoContainer = styled(Link)`
-    align-items: center;
     color: #fff;
-    display: flex;
     font-size: 2rem;
     font-style: italic;
     font-weight: bold;
@@ -54,12 +52,17 @@ export const LargeLogoContainer = styled(BaseLogoContainer)`
     }
 `;
 
-export const NavigationBarLinksContainer = styled.nav`
+export const NavigationBarLeftContainer = styled.nav`
     align-items: center;
     display: flex;
     justify-content: space-between;
     width: 600px;
+`;
 
+export const NavigationBarLinkContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
     a {
         color: #fff;
         text-decoration: none;

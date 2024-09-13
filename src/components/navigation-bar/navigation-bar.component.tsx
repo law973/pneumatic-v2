@@ -2,7 +2,8 @@ import {
     NavigationBarContainer,
     SmallLogoContainer,
     LargeLogoContainer,
-    NavigationBarLinksContainer
+    NavigationBarLeftContainer,
+    NavigationBarLinkContainer
 } from "./navigation-bar.styles";
 
 import { useState, useEffect } from "react";
@@ -43,19 +44,19 @@ const NavigationBar = () => {
         <NavigationBarContainer
             className={isScrollingUp ? 'active' : ''}
         >
-            <SmallLogoContainer to='/' title="Home">P</SmallLogoContainer>
-            <LargeLogoContainer to='/' title="Home">Pneumatic</LargeLogoContainer>
+            <NavigationBarLeftContainer>
+                <SmallLogoContainer to='/' title="Home">P</SmallLogoContainer>
+                <LargeLogoContainer to='/' title="Home">Pneumatic</LargeLogoContainer>
+                    <NavigationBarLinkContainer>
+                        <Link to='diet'>Diet</Link>
+                        <Link to='exercise'>Exercise</Link>
+                        <Link to='recovery'>Recovery</Link>
+                        <Link to='tools'>Tools</Link>
+                        <Link to='shop'>Shop</Link>
+                    </NavigationBarLinkContainer>
+            </NavigationBarLeftContainer>
 
             <HamburgerButton />
-
-            <NavigationBarLinksContainer>
-                <Link to='/'>Home</Link>
-                <Link to='diet'>Diet</Link>
-                <Link to='exercise'>Exercise</Link>
-                <Link to='recovery'>Recovery</Link>
-                <Link to='tools'>Tools</Link>
-                <Link to='shop'>Shop</Link>
-            </NavigationBarLinksContainer>
         </NavigationBarContainer>
     );
 };
