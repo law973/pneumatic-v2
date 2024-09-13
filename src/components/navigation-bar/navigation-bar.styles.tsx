@@ -63,6 +63,7 @@ export const NavigationBarLinkContainer = styled.div`
     display: flex;
     justify-content: space-between;
     width: 400px;
+    
     a {
         color: #fff;
         text-decoration: none;

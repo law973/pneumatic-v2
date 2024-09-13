@@ -20,6 +20,7 @@ import MacroSplit from './routes/macro-split/macro-split.component';
 import PlateCombos from './routes/plate-combos/plate-combos.component';
 import SleepCalculator from './routes/sleep-calculator/sleep-calculator.component';
 import Shop from './routes/shop/shop.component';
+import SignIn from './routes/sign-in/sign-in.component';
 
 const App = () => {
 
@@ -118,6 +119,13 @@ const App = () => {
                 <Shop />
               </>
             } 
+          />
+          <Route path='sign-in' element={
+              <>
+                <PageTitle title='Sign In - Pneumatic' />
+                <SignIn />
+              </>
+            }
           />
         </Route>
       </Routes>

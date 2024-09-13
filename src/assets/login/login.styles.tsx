@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const StyledShoppingBag = styled.svg`
+export const StyledLogin = styled.svg`
     transition: transform 1s;
 
     &:hover {
-        transform: translateY(-10%);
+        transform: translateX(10%);
     }
 
     /* Icon will not translate if reduced motion is preferred */

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const ShopContainer = styled.section`
+export const SignInContainer = styled.section`
     align-items: center;
-    background-color: #ff7518;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: center;

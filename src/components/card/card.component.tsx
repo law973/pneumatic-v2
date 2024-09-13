@@ -6,7 +6,8 @@ import {
     ExerciseCard,
     RecoveryCard,
     ToolsCard,
-    ShopCard
+    ShopCard,
+    SignInCard
 } from './card.styles';
 
 // Accepted values for the cardType prop are specified here
@@ -16,7 +17,8 @@ export enum CARD_TYPE_CLASSES {
     exercise = 'exercise',
     recovery = 'recovery',
     tools = 'tools',
-    shop = 'shop'
+    shop = 'shop',
+    signIn = 'signIn'
 };
 
 // Card color and styling changes depending on the value of the cardType prop 
@@ -28,7 +30,8 @@ const getCard = (cardType: CARD_TYPE_CLASSES):
     [CARD_TYPE_CLASSES.exercise]: ExerciseCard,
     [CARD_TYPE_CLASSES.recovery]: RecoveryCard,
     [CARD_TYPE_CLASSES.tools]: ToolsCard,
-    [CARD_TYPE_CLASSES.shop]: ShopCard
+    [CARD_TYPE_CLASSES.shop]: ShopCard,
+    [CARD_TYPE_CLASSES.signIn]: SignInCard
 }[cardType]);
 
 // Component prop is created here

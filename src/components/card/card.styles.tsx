@@ -125,6 +125,20 @@ export const ToolsCard = styled(Card)`
 `;
 
 export const ShopCard = styled(Card)`
+	background-color: #ff9d5c;
+	color: #000;
+
+	::selection {
+		background-color: #000;
+		color: #fff;
+	}
+
+	svg {
+		fill: #000;
+	}
+`;
+
+export const SignInCard = styled(Card)`
 	background-color: #fff;
 	color: #000;
 
