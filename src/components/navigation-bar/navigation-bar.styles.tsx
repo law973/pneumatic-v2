@@ -59,25 +59,31 @@ export const NavigationBarLeftContainer = styled.nav`
     width: 600px;
 `;
 
-export const NavigationBarLinkContainer = styled.div`
+export const NavigationBarLinksContainer = styled.div`
     display: flex;
     justify-content: space-between;
     width: 400px;
-    
-    a {
-        color: #fff;
-        text-decoration: none;
 
-        &:hover, &:active {
-            color: #ebebeb;
-            text-decoration: underline #ebebeb;
-        }
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+`;
 
-        &:active {
-            transform: translateY(0.1rem);
-        }
+export const NavigationBarLink = styled(Link)`
+    color: #fff;
+    text-decoration: none;
+
+    &:hover, &:active {
+        color: #ebebeb;
+        text-decoration: underline #ebebeb;
     }
 
+    &:active {
+        transform: translateY(0.1rem);
+    }
+`;
+
+export const SignInLink = styled(NavigationBarLink)`
     @media screen and (max-width: 767.98px) {
         display: none;
     }

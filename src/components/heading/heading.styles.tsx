@@ -6,8 +6,8 @@ export const HeadingOne = styled.h1`
     font-size: 1.5rem;
 
     svg {
-        height: 24px;
-        width: 24px;
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
     /* Breakpoints -------------------- */
@@ -17,8 +17,8 @@ export const HeadingOne = styled.h1`
         font-size: 2.125rem;
 
         svg {
-            height: 30px;
-            width: 30px;
+            height: 2.125rem;
+            width: 2.125rem;
         }
     }
 `;
@@ -29,8 +29,8 @@ export const HeadingTwo = styled.h2`
     font-size: 1.125rem;
 
     svg {
-        height: 18px;
-        width: 18px;
+        height: 1.125rem;
+        width: 1.125rem;
     }
 
     /* Breakpoints -------------------- */
@@ -40,8 +40,8 @@ export const HeadingTwo = styled.h2`
         font-size: 1.5rem;
 
         svg {
-            height: 24px;
-            width: 24px;
+            height: 1.5rem;
+            width: 1.5rem;
         }
     }
 
@@ -50,8 +50,8 @@ export const HeadingTwo = styled.h2`
         font-size: 1.875rem;
 
         svg {
-            height: 28px;
-            width: 28px;
+            height: 1.875rem;
+            width: 1.875rem;
         }
     }
 `;
@@ -62,8 +62,8 @@ export const HeadingThree = styled.h3`
     font-size: 1.125rem;
 
     svg {
-        height: 18px;
-        width: 18px;
+        height: 1.125rem;
+        width: 1.125rem;
     }
 
     /* Breakpoints -------------------- */
@@ -73,8 +73,8 @@ export const HeadingThree = styled.h3`
         font-size: 1.25rem;
 
         svg {
-            height: 20px;
-            width: 20px;
+            height: 1.25rem;
+            width: 1.25rem;
         }
     }
 
@@ -83,8 +83,8 @@ export const HeadingThree = styled.h3`
         font-size: 1.5rem;
 
         svg {
-            height: 24px;
-            width: 24px;
+            height: 1.5rem;
+            width: 1.5rem;
         }
     }
 `;
@@ -95,8 +95,8 @@ export const DisplayHeadingOne = styled.h1`
     font-size: 1.875rem;
 
     svg {
-        height: 28px;
-        width: 28px;
+        height: 1.875rem;
+        width: 1.875rem;
     }
 
     /* Breakpoints -------------------- */
@@ -106,8 +106,8 @@ export const DisplayHeadingOne = styled.h1`
         font-size: 3.125rem;
 
         svg {
-            height: 40px;
-            width: 40px;
+            height: 3.125rem;
+            width: 3.125rem;
         }
     }
 
@@ -116,8 +116,8 @@ export const DisplayHeadingOne = styled.h1`
         font-size: 3.75rem;
 
         svg {
-            height: 50px;
-            width: 50px;
+            height: 3.75rem;
+            width: 3.75rem;
         }
     }
 `;

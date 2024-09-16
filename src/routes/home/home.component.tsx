@@ -31,7 +31,7 @@ const Home = () => {
         <>
             <GreetingContainer>
                 {/* The hello text and welcome text are located here */}
-                <header>
+                <div>
                     <GreetingHello>
                         {/* Spans are targeted to delay the animation for each individual letter */}
                         <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>!</span>
@@ -40,7 +40,7 @@ const Home = () => {
                         {/* The welcome text appears after the hello text */}
                         Welcome to <em>Pneumatic</em>
                     </GreetingWelcome>
-                </header>
+                </div>
                 {/* The arrow leading to the introduction page is located here */}
                 <GreetingArrow>
                     <Button buttonType={BUTTON_TYPE_CLASSES.arrow} onClick={scrollTo} title="Introduction">

@@ -3,11 +3,12 @@ import {
     SmallLogoContainer,
     LargeLogoContainer,
     NavigationBarLeftContainer,
-    NavigationBarLinkContainer
+    NavigationBarLinksContainer,
+    NavigationBarLink,
+    SignInLink
 } from "./navigation-bar.styles";
 
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import HamburgerButton from "../hamburger-button/hamburger-button.component";
 
@@ -47,17 +48,17 @@ const NavigationBar = () => {
             <NavigationBarLeftContainer>
                 <SmallLogoContainer to='/' title="Home">P</SmallLogoContainer>
                 <LargeLogoContainer to='/' title="Home">Pneumatic</LargeLogoContainer>
-                    <NavigationBarLinkContainer>
-                        <Link to='diet'>Diet</Link>
-                        <Link to='exercise'>Exercise</Link>
-                        <Link to='recovery'>Recovery</Link>
-                        <Link to='tools'>Tools</Link>
-                        <Link to='shop'>Shop</Link>
-                    </NavigationBarLinkContainer>
+                    <NavigationBarLinksContainer>
+                        <NavigationBarLink to='diet'>Diet</NavigationBarLink>
+                        <NavigationBarLink to='exercise'>Exercise</NavigationBarLink>
+                        <NavigationBarLink to='recovery'>Recovery</NavigationBarLink>
+                        <NavigationBarLink to='tools'>Tools</NavigationBarLink>
+                        <NavigationBarLink to='shop'>Shop</NavigationBarLink>
+                    </NavigationBarLinksContainer>
             </NavigationBarLeftContainer>
 
             <HamburgerButton />
-            {/* <Link to={}></Link> */}
+            <SignInLink to='sign-in'>Sign In</SignInLink>
         </NavigationBarContainer>
     );
 };

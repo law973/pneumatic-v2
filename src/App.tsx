@@ -29,6 +29,7 @@ const App = () => {
       <GlobalStyle />
       <Routes>
         <Route path='/' element={<Navigation />}>
+          {/* Home Page Route */}
           <Route index element={
               <>
                 <PageTitle title='Pneumatic - Fitness Information & Tools' />
@@ -36,6 +37,7 @@ const App = () => {
               </>
             } 
           />
+          {/* Diet Route */}
           <Route path='diet' element={
               <>
                 <PageTitle title='Diet - Pneumatic' />
@@ -43,27 +45,31 @@ const App = () => {
               </>
             } 
           />
-          <Route path='exercise' element={
-              <>
-                <PageTitle title='Exercise - Pneumatic' />
-                <Exercise />
-              </>
-            } 
-          />
-          <Route path='exercise/strength-training' element={
-              <>
-                <PageTitle title='Strength Training - Pneumatic' />
-                <StrengthTraining />
-              </>
-            } 
-          />
-          <Route path='exercise/cardio' element={
-              <>
-                <PageTitle title='Cardio - Pneumatic' />
-                <Cardio />
-              </>
-            } 
-          />
+          {/* Exercise Route */}
+          <Route path='exercise'>
+            <Route index element={
+                <>
+                  <PageTitle title='Exercise - Pneumatic' />
+                  <Exercise />
+                </>
+              } 
+            />
+            <Route path='strength-training' element={
+                <>
+                  <PageTitle title='Strength Training - Pneumatic' />
+                  <StrengthTraining />
+                </>
+              } 
+            />
+            <Route path='cardio' element={
+                <>
+                  <PageTitle title='Cardio - Pneumatic' />
+                  <Cardio />
+                </>
+              } 
+            />
+          </Route>
+          {/* Recovery Route */}
           <Route path='recovery' element={
               <>
                 <PageTitle title='Recovery - Pneumatic' />
@@ -71,48 +77,52 @@ const App = () => {
               </>
             } 
           />
-          <Route path='tools' element={
-              <>
-                <PageTitle title='Tools - Pneumatic' />
-                <Tools />
-              </>
-            } 
-          />
-          <Route path='tools/tdee-calculator' element={
-              <>
-                <PageTitle title='TDEE Calculator - Pneumatic' />
-                <TDEECalculator />
-              </>
-            } 
-          />
-          <Route path='tools/calorie-goal' element={
-              <>
-                <PageTitle title='Calorie Goal - Pneumatic' />
-                <CalorieGoal />
-              </>
-            } 
-          />
-          <Route path='tools/macro-split' element={
-              <>
-                <PageTitle title='Macro Split - Pneumatic' />
-                <MacroSplit />
-              </>
-            } 
-          />
-          <Route path='tools/plate-combos' element={
-              <>
-                <PageTitle title='Plate Combos - Pneumatic' />
-                <PlateCombos />
-              </>
-            } 
-          />
-          <Route path='tools/sleep-calculator' element={
-              <>
-                <PageTitle title='Sleep Calculator - Pneumatic' />
-                <SleepCalculator />
-              </>
-            } 
-          />
+          {/* Tools Route */}
+          <Route path='tools'>
+            <Route index element={
+                <>
+                  <PageTitle title='Tools - Pneumatic' />
+                  <Tools />
+                </>
+              } 
+            />
+            <Route path='tdee-calculator' element={
+                <>
+                  <PageTitle title='TDEE Calculator - Pneumatic' />
+                  <TDEECalculator />
+                </>
+              } 
+            />
+            <Route path='calorie-goal' element={
+                <>
+                  <PageTitle title='Calorie Goal - Pneumatic' />
+                  <CalorieGoal />
+                </>
+              } 
+            />
+            <Route path='macro-split' element={
+                <>
+                  <PageTitle title='Macro Split - Pneumatic' />
+                  <MacroSplit />
+                </>
+              } 
+            />
+            <Route path='plate-combos' element={
+                <>
+                  <PageTitle title='Plate Combos - Pneumatic' />
+                  <PlateCombos />
+                </>
+              } 
+            />
+            <Route path='sleep-calculator' element={
+                <>
+                  <PageTitle title='Sleep Calculator - Pneumatic' />
+                  <SleepCalculator />
+                </>
+              } 
+            />
+          </Route>
+          {/* Shop Route */}
           <Route path='shop' element={
               <>
                 <PageTitle title='Shop - Pneumatic' />
@@ -120,6 +130,7 @@ const App = () => {
               </>
             } 
           />
+          {/* Sign In Route */}
           <Route path='sign-in' element={
               <>
                 <PageTitle title='Sign In - Pneumatic' />

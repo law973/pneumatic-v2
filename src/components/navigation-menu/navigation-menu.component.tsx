@@ -16,9 +16,6 @@ const NavigationMenu = () => {
         <NavigationMenuContainer className={isMenuOpen ? 'active' : ''}>
             <ul>
                 <li>
-                    <Link to='/' onClick={toggleMenu}>Home</Link>
-                </li>
-                <li>
                     <Link to='diet' onClick={toggleMenu}>Diet</Link>
                 </li>
                 <li>
@@ -32,6 +29,9 @@ const NavigationMenu = () => {
                 </li>
                 <li>
                     <Link to='shop' onClick={toggleMenu}>Shop</Link>
+                </li>
+                <li>
+                    <Link to='sign-in' onClick={toggleMenu}>Sign In</Link>
                 </li>
             </ul>
         </NavigationMenuContainer>
