@@ -7,12 +7,12 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Header, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
-import Hammer from "../../assets/hammer/hammer.component";
-import Algebra from "../../assets/algebra/algebra.component";
-import Target from "../../assets/target/target.component";
-import PieChart from "../../assets/pie-chart/pie-chart.component";
-import WeightPlate from "../../assets/weight-plate/weight-plate.component";
-import Clock from "../../assets/clock/clock.component";
+import Hammer from "../../assets/icons/tools/hammer/hammer.component";
+import Algebra from "../../assets/icons/tools/algebra/algebra.component";
+import Target from "../../assets/icons/tools/target/target.component";
+import PieChart from "../../assets/icons/tools/pie-chart/pie-chart.component";
+import WeightPlate from "../../assets/icons/tools/weight-plate/weight-plate.component";
+import Clock from "../../assets/icons/tools/clock/clock.component";
 
 const Tools = () => {
     return (
@@ -30,7 +30,6 @@ const Tools = () => {
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>Plate Combos will show you which pairs of plates will need to be used together in order to reach the desired amount of weight on your barbell (assuming you are using an olympic bar, which weighs approximately 45lbs by itself).</Paragraph>
 
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>The Sleep Calculator will suggest a time to go to sleep at based on the time you wish to wake up. Alternatively, it can suggest a wake-up time based on when you are going to bed.</Paragraph>
-
             </Card>
             <div>
                 <Card cardType={CARD_TYPE_CLASSES.tools}>

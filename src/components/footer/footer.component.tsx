@@ -2,8 +2,8 @@ import { FooterContainer, FooterIconsContainer } from "./footer.styles";
 
 import FooterIcon from "../footer-icon/footer-icon.component";
 
-import LinkedInLogo from "../../assets/linkedin-logo.component";
-import GitHubLogo from "../../assets/github-logo.component";
+import LinkedInLogo from "../../assets/icons/footer/linkedin-logo.component";
+import GitHubLogo from "../../assets/icons/footer/github-logo.component";
 
 //Footer appears on every page
 const Footer = () => {

@@ -15,7 +15,7 @@ import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../../components/button/button.component";
 
-import ArrowDown from "../../assets/arrow-down.component";
+import ArrowDown from "../../assets/icons/arrow-down.component";
 
 const Home = () => {
 

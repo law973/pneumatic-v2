@@ -6,7 +6,7 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
-import Bed from "../../assets/bed/bed.component";
+import Bed from "../../assets/icons/recovery/bed/bed.component";
 
 const Recovery = () => {
     return (

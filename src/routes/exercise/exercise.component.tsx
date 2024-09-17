@@ -7,9 +7,9 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
-import Running from "../../assets/running/running.component";
-import Dumbbell from "../../assets/dumbbell/dumbbell.component";
-import Heart from "../../assets/heart/heart.component";
+import Running from "../../assets/icons/exercise/running/running.component";
+import Dumbbell from "../../assets/icons/exercise/dumbbell/dumbbell.component";
+import Heart from "../../assets/icons/exercise/heart/heart.component";
 
 const Exercise = () => {
     return (

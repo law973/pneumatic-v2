@@ -3,7 +3,7 @@ import { SleepCalculatorContainer } from "./sleep-calculator.styles";
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 
-import Clock from "../../assets/clock/clock.component";
+import Clock from "../../assets/icons/tools/clock/clock.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
 const SleepCalculator = () => {

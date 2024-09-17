@@ -3,7 +3,7 @@ import { MacroSplitContainer } from "./macro-split.styles";
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 
-import PieChart from "../../assets/pie-chart/pie-chart.component";
+import PieChart from "../../assets/icons/tools/pie-chart/pie-chart.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
 const MacroSplit = () => {

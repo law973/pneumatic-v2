@@ -3,8 +3,8 @@ import { StrengthTrainingContainer } from "./strength-training.styles";
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 
-import Dumbbell from "../../assets/dumbbell/dumbbell.component";
-import Progressive from "../../assets/progressive/progressive.component";
+import Dumbbell from "../../assets/icons/exercise/dumbbell/dumbbell.component";
+import Progressive from "../../assets/icons/exercise/progressive/progressive.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
 const StrengthTraining = () => {

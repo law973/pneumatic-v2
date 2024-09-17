@@ -1,8 +1,8 @@
 import { 
-    NavigationBarContainer,
+    HeaderContainer,
     SmallLogoContainer,
     LargeLogoContainer,
-    NavigationBarLeftContainer,
+    NavigationBarContainer,
     NavigationBarLinksContainer,
     NavigationBarLink,
     SignInLink
@@ -42,10 +42,10 @@ const NavigationBar = () => {
     }, [previousScrollPosition]);
 
     return (
-        <NavigationBarContainer
+        <HeaderContainer
             className={isScrollingUp ? 'active' : ''}
         >
-            <NavigationBarLeftContainer>
+            <NavigationBarContainer>
                 <SmallLogoContainer to='/' title="Home">P</SmallLogoContainer>
                 <LargeLogoContainer to='/' title="Home">Pneumatic</LargeLogoContainer>
                     <NavigationBarLinksContainer>
@@ -55,11 +55,11 @@ const NavigationBar = () => {
                         <NavigationBarLink to='tools'>Tools</NavigationBarLink>
                         <NavigationBarLink to='shop'>Shop</NavigationBarLink>
                     </NavigationBarLinksContainer>
-            </NavigationBarLeftContainer>
+            </NavigationBarContainer>
 
             <HamburgerButton />
             <SignInLink to='sign-in'>Sign In</SignInLink>
-        </NavigationBarContainer>
+        </HeaderContainer>
     );
 };
 

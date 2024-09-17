@@ -3,7 +3,7 @@ import { SignInContainer } from "./sign-in.styles";
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 
-import Login from "../../assets/login/login.component";
+import Login from "../../assets/icons/sign-in/login/login.component";
 
 const SignIn = () => {
     return (

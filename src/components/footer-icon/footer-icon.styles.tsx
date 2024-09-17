@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const FooterIconContainer = styled.a`
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
 
     svg {
         fill: #fff;

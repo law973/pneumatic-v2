@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Link } from "react-router-dom";
 
-export const NavigationBarContainer = styled.div`
+export const HeaderContainer = styled.header`
     align-items: center;
     background-color: rgba(0, 0, 255, 0.5);
     display: flex;
@@ -52,7 +52,7 @@ export const LargeLogoContainer = styled(BaseLogoContainer)`
     }
 `;
 
-export const NavigationBarLeftContainer = styled.nav`
+export const NavigationBarContainer = styled.nav`
     align-items: center;
     display: flex;
     justify-content: space-between;

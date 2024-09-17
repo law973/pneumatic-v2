@@ -3,7 +3,7 @@ import { CalorieGoalContainer } from "./calorie-goal.styles";
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 
-import Target from "../../assets/target/target.component";
+import Target from "../../assets/icons/tools/target/target.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
 const CalorieGoal = () => {

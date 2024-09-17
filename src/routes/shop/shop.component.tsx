@@ -4,7 +4,7 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
-import ShoppingBag from "../../assets/shopping-bag/shopping-bag.component";
+import ShoppingBag from "../../assets/icons/shop/shopping-bag/shopping-bag.component";
 
 const Shop = () => {
     return (

@@ -4,7 +4,7 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import TDEEForm from "../../components/tdee-form/tdee-form.component";
 
-import Algebra from "../../assets/algebra/algebra.component";
+import Algebra from "../../assets/icons/tools/algebra/algebra.component";
 
 const TDEECalculator = () => {
     return (

@@ -3,7 +3,7 @@ import { PlateCombosContainer } from "./plate-combos.styles";
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 
-import WeightPlate from "../../assets/weight-plate/weight-plate.component";
+import WeightPlate from "../../assets/icons/tools/weight-plate/weight-plate.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
 const PlateCombos = () => {

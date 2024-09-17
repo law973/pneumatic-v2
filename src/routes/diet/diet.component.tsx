@@ -7,9 +7,9 @@ import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";
 import Heading, { HEADING_TYPE_CLASSES } from "../../components/heading/heading.component";
 import Paragraph, { PARAGRAPH_TYPE_CLASSES } from "../../components/paragraph/paragraph.component";
 
-import Cutlery from "../../assets/cutlery/cutlery.component";
-import FastFood from "../../assets/fast-food/fast-food.component";
-import Flame from "../../assets/flame/flame.component";
+import Cutlery from "../../assets/icons/diet/cutlery/cutlery.component";
+import FastFood from "../../assets/icons/diet/fast-food/fast-food.component";
+import Flame from "../../assets/icons/diet/flame/flame.component";
 
 const Diet = () => {
     return (
@@ -28,19 +28,7 @@ const Diet = () => {
 
                 <Heading headingType={HEADING_TYPE_CLASSES.headingOne}><Flame />&nbsp;Calories</Heading>
                 <Paragraph paragraphType={PARAGRAPH_TYPE_CLASSES.regular}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam possimus enim, non rem error nostrum accusantium itaque expedita sapiente impedit, eius inventore? Dolorem voluptates excepturi, recusandae impedit libero accusantium atque.</Paragraph>
-
-                {/* <Header headerType={HEADER_TYPE_CLASSES.tertiary}><Cutlery />&nbsp;Test</Header> */}
             </Card>
-            {/* <div>
-                <Card cardType={CARD_TYPE_CLASSES.diet}>
-                    <Heading headingType={HEADING_TYPE_CLASSES.headingOne}><FastFood/>&nbsp;General Advice</Heading>
-                    <Link to='general-advice'>Click here</Link>
-                </Card>
-                <Card cardType={CARD_TYPE_CLASSES.diet}>
-                    <Heading headingType={HEADING_TYPE_CLASSES.headingOne}>Calories</Heading>
-                    <Link to='calories'>Click here</Link>
-                </Card>
-            </div> */}
             <SectionLink to='/exercise'>Next Section: Exercise</SectionLink>
         </DietContainer>
     );
