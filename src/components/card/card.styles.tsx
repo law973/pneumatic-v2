@@ -69,16 +69,17 @@ export const IntroductionCard = styled(Card)`
 `;
 
 export const DietCard = styled(Card)`
-	background-color: #9cfce3;
+	background-color: var(--content-color-diet);
+	border-color: var(--outline-color-diet);
 	color: #000;
 
 	::selection {
-		background-color: #006400;
+		background-color: var(--selection-color-diet);
 		color: #fff;
 	}
 
 	svg {
-		fill: #000;
+		fill: var(--outline-color-diet);
 	}
 `;
 

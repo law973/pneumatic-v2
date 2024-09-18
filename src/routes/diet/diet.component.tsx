@@ -1,6 +1,5 @@
 import { DietContainer } from "./diet.styles";
 
-// import { Link } from "react-router-dom";
 import { SectionLink } from "../../components/section-link/section-link.styles";
 
 import Card, { CARD_TYPE_CLASSES } from "../../components/card/card.component";

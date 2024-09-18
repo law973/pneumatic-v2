@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DietContainer = styled.div`
     align-items: center;
-    background-color: #06d6a0;
+    background-color: var(--bg-color-diet);
     color: #000;
     display: flex;
     flex-direction: column;
