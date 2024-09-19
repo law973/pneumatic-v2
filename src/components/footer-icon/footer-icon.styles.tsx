@@ -6,11 +6,11 @@ export const FooterIconContainer = styled.a`
     width: 3.125rem;
 
     svg {
-        fill: #fff;
+        fill: var(--footer-icon-color);
         transition: fill 0.25s linear, transform 0.25s linear;
         
-        &:hover { 
-            fill: #ebebeb;
+        &:hover {
+            fill: var(--footer-icon-color-hover);
             transform: scale(1.1); 
         }
     }

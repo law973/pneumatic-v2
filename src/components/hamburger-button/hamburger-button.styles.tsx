@@ -9,13 +9,13 @@ export const HamburgerButtonContainer = styled.div`
     width: 2rem;
 
     div {
-        background-color: #fff;
+        background-color: var(--hamburger-button-color);
         height: 0.25rem;
         transition: all 0.3s ease-in-out;
     }
 
     &:hover div {
-        background-color: #ebebeb;
+        background-color: var(--hamburger-button-color-hover);
     }
 
     &.active {

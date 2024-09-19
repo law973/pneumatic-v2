@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --bg-color-diet: #06d6a0;
         --bg-color-exercise: #880d1e;
+        --bg-color-footer: #000;
         --bg-color-home: #0000ff;
         --bg-color-recovery: #bbbdf6;
         --bg-color-shop: #ff7518;
@@ -22,6 +23,10 @@ export const GlobalStyle = createGlobalStyle`
         --content-color-shop: #ff9d5c;
         --content-color-sign-in: #fff;
         --content-color-tools: #fee485;
+        --footer-icon-color: #fff;
+        --footer-icon-color-hover: #ebebeb;
+        --hamburger-button-color: #fff;
+        --hamburger-button-color-hover: #ebebeb;
         --outline-color-diet: #000;
         --outline-color-exercise: #fff;
         --outline-color-home: #fff;
@@ -31,6 +36,7 @@ export const GlobalStyle = createGlobalStyle`
         --outline-color-tools: #000;
         --selection-color-diet: #006400;
         --selection-color-exercise: #f08080;
+        --selection-color-footer: #fff;
         --selection-color-home: #add8e6;
         --selection-color-recovery: #800080;
         --selection-color-shop: #8f3900;
@@ -45,6 +51,7 @@ export const GlobalStyle = createGlobalStyle`
     [data-theme="dark"] {
         --bg-color-diet: #121212;
         --bg-color-exercise: #121212;
+        --bg-color-footer: #1e1e1e;
         --bg-color-home: #121212;
         --bg-color-recovery: #121212;
         --bg-color-shop: #121212;
@@ -57,6 +64,10 @@ export const GlobalStyle = createGlobalStyle`
         --content-color-shop: #1e1e1e;
         --content-color-sign-in: #1e1e1e;
         --content-color-tools: #1e1e1e;
+        --footer-icon-color: #d7dadc;
+        --footer-icon-color-hover: #bb86fc;
+        --hamburger-button-color: #d7dadc;
+        --hamburger-button-color-hover: #bb86fc;
         --outline-color-diet: #05c793;
         --outline-color-exercise: #f37c8c;
         --outline-color-home: #9999ff;
@@ -66,6 +77,7 @@ export const GlobalStyle = createGlobalStyle`
         --outline-color-tools: #cb9f01;
         --selection-color-diet: #bb86fc;
         --selection-color-exercise: #bb86fc;
+        --selection-color-footer: #bb86fc;
         --selection-color-home: #bb86fc;
         --selection-color-recovery: #bb86fc;
         --selection-color-shop: #bb86fc;

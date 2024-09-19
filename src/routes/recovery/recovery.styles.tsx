@@ -9,6 +9,11 @@ export const RecoveryContainer = styled.div`
     min-height: 100vh;
     justify-content: center;
 
+    ::selection {
+        background-color: var(--selection-color-recovery);
+        color: var(--text-selected-color-white);
+    }
+
     a {
         color: var(--text-color-black);
     }

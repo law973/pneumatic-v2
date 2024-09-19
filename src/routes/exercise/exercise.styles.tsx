@@ -11,6 +11,11 @@ export const ExerciseContainer = styled.div`
     padding-bottom: 30px;
     padding-top: 75px;
 
+    ::selection {
+        background-color: var(--selection-color-exercise);
+        color: var(--text-selected-color-black);
+    }
+
     a {
         color: var(--text-color-white);
     }

@@ -11,6 +11,11 @@ export const DietContainer = styled.div`
     padding-bottom: 30px;
     padding-top: 75px;
 
+    ::selection {
+        background-color: var(--selection-color-diet);
+        color: var(--text-selected-color-white);
+    }
+
     a {
         color: var(--text-color-black);
     }
