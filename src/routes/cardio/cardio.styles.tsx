@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardioContainer = styled.div`
     align-items: center;
-    background-color: #880d1e;
+    background-color: var(--bg-color-exercise);
     display: flex;
     flex-direction: column;
     justify-content: center;

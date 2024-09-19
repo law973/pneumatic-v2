@@ -61,7 +61,7 @@ export const IntroductionCard = styled(Card)`
 
 	::selection {
 		background-color: var(--selection-color-home);
-		color: var(--text-selected-color-home);
+		color: var(--text-selected-color-black);
 	}
 
 	svg {

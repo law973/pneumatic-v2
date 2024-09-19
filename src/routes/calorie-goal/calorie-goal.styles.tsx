@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CalorieGoalContainer = styled.div`
     align-items: center;
-    background-color: #fec601;
+    background-color: var(--bg-color-tools);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ExerciseContainer = styled.div`
     align-items: center;
-    background-color: #880d1e;
-    color: #fff;
+    background-color: var(--bg-color-exercise);
+    color: var(--text-color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +12,6 @@ export const ExerciseContainer = styled.div`
     padding-top: 75px;
 
     a {
-        color: #fff;
+        color: var(--text-color-white);
     }
 `;

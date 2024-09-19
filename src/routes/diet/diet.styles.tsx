@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DietContainer = styled.div`
     align-items: center;
     background-color: var(--bg-color-diet);
-    color: #000;
+    color: var(--text-color-black);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +12,6 @@ export const DietContainer = styled.div`
     padding-top: 75px;
 
     a {
-        color: #000;
+        color: var(--text-color-black);
     }
 `;

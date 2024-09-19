@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 // Styling for container of hello text, welcome text, and arrow
 export const GreetingContainer = styled.section`
-    background-color: #0000ff;
-    color: #fff;
+    background-color: var(--bg-color-home);
+    color: var(--text-color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
 
     ::selection {
-        background-color: #fff;
-        color: #000;
+        background-color: var(--selection-color-home);
+        color: var(--text-selected-color-black);
     }
 `;
 
@@ -248,8 +248,8 @@ export const GreetingArrow = styled.div`
 // Styling for container of introduction text
 export const IntroductionContainer = styled.section`
     align-items: center;
-    background-color: #0000ff;
-    color: #fff;
+    background-color: var(--bg-color-home);
+    color: var(--text-color-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,6 +258,6 @@ export const IntroductionContainer = styled.section`
     padding-top: 75px;
 
     a {
-        color: #fff;
+        color: var(--text-color-white);
     }
 `;
