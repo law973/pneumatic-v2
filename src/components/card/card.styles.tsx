@@ -55,27 +55,28 @@ export const Card = styled.div`
 `;
 
 export const IntroductionCard = styled(Card)`
-	background-color: #00008f;
-	color: #fff;
+	background-color: var(--content-color-home);
+	border-color: var(--outline-color-home);
+	color: var(--text-color-white);
 
 	::selection {
-		background-color: #add8e6;
-		color: #000;
+		background-color: var(--selection-color-home);
+		color: var(--text-selected-color-home);
 	}
 
 	svg {
-		fill: #fff;
+		fill: var(--outline-color-home);
 	}
 `;
 
 export const DietCard = styled(Card)`
 	background-color: var(--content-color-diet);
 	border-color: var(--outline-color-diet);
-	color: #000;
+	color: var(--text-color-black);
 
 	::selection {
 		background-color: var(--selection-color-diet);
-		color: #fff;
+		color: var(--text-selected-color-white);
 	}
 
 	svg {
@@ -84,71 +85,76 @@ export const DietCard = styled(Card)`
 `;
 
 export const ExerciseCard = styled(Card)`
-	background-color: #5d0914;
-	color: #fff;
+	background-color: var(--content-color-exercise);
+	border-color: var(--outline-color-exercise);
+	color: var(--text-color-white);
 
 	::selection {
-		background-color: #f08080;
-		color: #000;
+		background-color: var(--selection-color-exercise);
+		color: var(--text-selected-color-black);
 	}
 
 	svg {
-		fill: #fff;
+		fill: var(--outline-color-exercise);
 	}
 `;
 
 export const RecoveryCard = styled(Card)`
-	background-color: #ededfd;
-	color: #000;
+	background-color: var(--content-color-recovery);
+	border-color: var(--outline-color-recovery);
+	color: var(--text-color-black);
 
 	::selection {
-		background-color: #800080;
-		color: #fff;
+		background-color: var(--selection-color-recovery);
+		color: var(--text-selected-color-white);
 	}
 
 	svg {
-		fill: #000;
+		fill: var(--outline-color-recovery);
 	}
 `;
 
 export const ToolsCard = styled(Card)`
-	background-color: #fee485;
-	color: #000;
+	background-color: var(--content-color-tools);
+	border-color: var(--outline-color-tools);
+	color: var(--text-color-black);
 
 	::selection {
-		background-color: #b8860b;
-		color: #fff;
+		background-color: var(--selection-color-tools);
+		color: var(--text-selected-color-white);
 	}
 
 	svg {
-		fill: #000;
+		fill: var(--outline-color-tools);
 	}
 `;
 
 export const ShopCard = styled(Card)`
-	background-color: #ff9d5c;
-	color: #000;
+	background-color: var(--content-color-shop);
+	border-color: var(--outline-color-shop);
+	color: var(--text-color-black);
 
 	::selection {
-		background-color: #000;
-		color: #fff;
+		background-color: var(--selection-color-shop);
+		color: var(--text-selected-color-white);
 	}
 
 	svg {
-		fill: #000;
+		fill: var(--outline-color-shop);
 	}
 `;
 
 export const SignInCard = styled(Card)`
-	background-color: #fff;
-	color: #000;
+	background-color: var(--content-color-sign-in);
+	border-color: var(--outline-color-sign-in);
+	color: var(--text-color-black);
 
 	::selection {
-		background-color: #000;
-		color: #fff;
+		background-color: var(--selection-color-sign-in);
+		color: var(--text-selected-color-white);
 	}
 
 	svg {
-		fill: #000;
+		fill: var(--outline-color-sign-in);
 	}
 `;

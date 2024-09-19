@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
         --outline-color-exercise: #fff;
         --outline-color-home: #fff;
         --outline-color-recovery: #000;
-        /* --outline-color-shop: #000 */
+        --outline-color-shop: #000;
         --outline-color-sign-in: #000;
         --outline-color-tools: #000;
         --selection-color-diet: #006400;
@@ -36,6 +36,10 @@ export const GlobalStyle = createGlobalStyle`
         --selection-color-shop: #8f3900;
         --selection-color-sign-in: #000;
         --selection-color-tools: #b8860b;
+        --text-color-black: #000;
+        --text-color-white: #fff;
+        --text-selected-color-black: #000;
+        --text-selected-color-white: #fff;
     }
 
     [data-theme="dark"] {
@@ -57,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
         --outline-color-exercise: #f37c8c;
         --outline-color-home: #9999ff;
         --outline-color-recovery: #a4a6f4;
-        /* --outline-color-shop: */
+        --outline-color-shop: #ffa970;
         --outline-color-sign-in: #d7dadc;
         --outline-color-tools: #cb9f01;
         --selection-color-diet: #bb86fc;
@@ -67,6 +71,10 @@ export const GlobalStyle = createGlobalStyle`
         --selection-color-shop: #bb86fc;
         --selection-color-sign-in: #bb86fc;
         --selection-color-tools: #bb86fc;
+        --text-color-black: #d7dadc;
+        --text-color-white: #d7dadc;
+        --text-selected-color-black: #000;
+        --text-selected-color-white: #000;
     }
 
     html {
