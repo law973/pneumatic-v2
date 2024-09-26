@@ -3,55 +3,33 @@ import styled from "styled-components";
 export const HeadingOne = styled.h1`
     align-items: center;
     display: flex;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 4.42vw, 2.125rem);
 
     svg {
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-
-    /* Breakpoints -------------------- */
-
-    /* Breakpoint (Tablet Size) */
-    @media screen and (min-width: 768px) {
-        font-size: 2.125rem;
-
-        svg {
-            height: 2.125rem;
-            width: 2.125rem;
-        }
+        height: clamp(1.5rem, 4.42vw, 2.125rem);
+        width: clamp(1.5rem, 4.42vw, 2.125rem);
     }
 `;
 
 export const HeadingTwo = styled.h2`
     align-items: center;
     display: flex;
-    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 3.12vw, 1.5rem);
 
     svg {
-        height: 1.125rem;
-        width: 1.125rem;
+        height: clamp(1.125rem, 3.12vw, 1.5rem);
+        width: clamp(1.125rem, 3.12vw, 1.5rem);
     }
 
     /* Breakpoints -------------------- */
 
-    /* Breakpoint (Tablet Size) */
+    /* Breakpoint (Medium, Tablet) */
     @media screen and (min-width: 768px) {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 3.02vw, 1.875rem);
 
         svg {
-            height: 1.5rem;
-            width: 1.5rem;
-        }
-    }
-
-    /* Breakpoint (Desktop Size) */
-    @media screen and (min-width: 992px) {
-        font-size: 1.875rem;
-
-        svg {
-            height: 1.875rem;
-            width: 1.875rem;
+            height: clamp(1.5rem, 3.02vw, 1.875rem);
+            width: clamp(1.5rem, 3.02vw, 1.875rem);
         }
     }
 `;
@@ -59,32 +37,22 @@ export const HeadingTwo = styled.h2`
 export const HeadingThree = styled.h3`
     align-items: center;
     display: flex;
-    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 2.6vw, 1.25rem);
 
     svg {
-        height: 1.125rem;
-        width: 1.125rem;
+        height: clamp(1.125rem, 2.6vw, 1.25rem);
+        width: clamp(1.125rem, 2.6vw, 1.25rem);
     }
 
     /* Breakpoints -------------------- */
 
-    /* Breakpoint (Tablet Size) */
+    /* Breakpoint (Medium, Tablet) */
     @media screen and (min-width: 768px) {
-        font-size: 1.25rem;
+        font-size: clamp(1.25rem, 2.41vw, 1.5rem);
 
         svg {
-            height: 1.25rem;
-            width: 1.25rem;
-        }
-    }
-
-    /* Breakpoint (Desktop Size) */
-    @media screen and (min-width: 992px) {
-        font-size: 1.5rem;
-
-        svg {
-            height: 1.5rem;
-            width: 1.5rem;
+            height: clamp(1.25rem, 2.41vw, 1.5rem);
+            width: clamp(1.25rem, 2.41vw, 1.5rem);
         }
     }
 `;
@@ -92,32 +60,22 @@ export const HeadingThree = styled.h3`
 export const DisplayHeadingOne = styled.h1`
     align-items: center;
     display: flex;
-    font-size: 1.875rem;
+    font-size: clamp(1.875rem, 6.51vw, 3.125rem);
 
     svg {
-        height: 1.875rem;
-        width: 1.875rem;
+        height: clamp(1.875rem, 6.51vw, 3.125rem);
+        width: clamp(1.875rem, 6.51vw, 3.125rem);
     }
 
     /* Breakpoints -------------------- */
 
-    /* Breakpoint (Tablet Size) */
+    /* Breakpoint (Medium, Tablet) */
     @media screen and (min-width: 768px) {
-        font-size: 3.125rem;
+        font-size: clamp(3.125rem, 6.04vw, 3.75rem);
 
         svg {
-            height: 3.125rem;
-            width: 3.125rem;
-        }
-    }
-
-    /* Breakpoint (Desktop Size) */
-    @media screen and (min-width: 992px) {
-        font-size: 3.75rem;
-
-        svg {
-            height: 3.75rem;
-            width: 3.75rem;
+            height: clamp(3.125rem, 6.04vw, 3.75rem);
+            width: clamp(3.125rem, 6.04vw, 3.75rem);
         }
     }
 `;
