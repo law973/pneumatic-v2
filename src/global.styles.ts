@@ -89,6 +89,14 @@ export const GlobalStyle = createGlobalStyle`
         --text-selected-color-white: #000;
     }
 
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    * {
+        margin: 0;
+    }
+
     html {
         scroll-behavior: smooth;
 
@@ -100,15 +108,30 @@ export const GlobalStyle = createGlobalStyle`
     body {
         display: flex;
         font-family: 'Nunito', sans-serif;
+        line-height: 1.5;
         margin: 0;
         min-height: 100vh;
         min-width: 320px;
         place-items: center;
+        -webkit-font-smoothing: antialiased;
     }
 
-    * {
-        box-sizing: border-box;
+    img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
     }
+
+    input, button, textarea, select {
+        font: inherit;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+    }
+
+    /* #root, #__next {
+        isolation: isolate;
+    } */
 
     /* || SCROLLBAR STYLING */
     ::-webkit-scrollbar {
