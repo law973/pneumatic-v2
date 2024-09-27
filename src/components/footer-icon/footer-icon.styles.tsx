@@ -8,10 +8,12 @@ export const FooterIconContainer = styled.a`
     svg {
         fill: var(--footer-icon-color);
         transition: fill 0.25s linear, transform 0.25s linear;
-        
-        &:hover {
+    }
+
+    &:hover, &:focus {
+        svg {
             fill: var(--footer-icon-color-hover);
-            transform: scale(1.1); 
+            transform: scale(1.1);
         }
     }
 `;
