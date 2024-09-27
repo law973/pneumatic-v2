@@ -1,12 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-    @font-face {
-        font-display: swap;
-        font-family: 'Nunito Regular';
-        src: url("./assets/fonts/Nunito-VariableFont_wght.ttf");
-    }
-
     :root {
         --bg-color-diet: #06d6a0;
         --bg-color-exercise: #880d1e;
