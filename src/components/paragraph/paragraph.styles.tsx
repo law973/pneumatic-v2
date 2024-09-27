@@ -6,16 +6,8 @@ export const ParagraphContainer = styled.p`
     text-align: left;
 `;
 
-export const LeadParagraphContainer = styled(ParagraphContainer)`
-    /* Breakpoints -------------------- */
-
-    /* Breakpoint (Tablet Size) */
-    @media screen and (min-width: 768px) {
-        font-size: 1.125rem;
-    }
-
-    /* Breakpoint (Desktop Size) */
-    @media screen and (min-width: 992px) {
-        font-size: 1.25rem;
-    }
+export const LeadParagraphContainer = styled.p`
+    font-size: clamp(1rem, 2.34vw, 1.25rem);
+    max-width: 75ch;
+    text-align: left;
 `;

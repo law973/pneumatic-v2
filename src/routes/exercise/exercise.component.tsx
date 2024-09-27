@@ -20,7 +20,7 @@ const Exercise = () => {
             </Card>
             <div>
                 <Card cardType={CARD_TYPE_CLASSES.exercise}>
-                    <Heading headingType={HEADING_TYPE_CLASSES.headingThree}><Dumbbell/>&nbsp;Strength Training</Heading>
+                    <Heading headingType={HEADING_TYPE_CLASSES.headingOne}><Dumbbell/>&nbsp;Strength Training</Heading>
                     <Link to='strength-training'>Click here</Link>
                 </Card>
 
