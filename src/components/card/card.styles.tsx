@@ -11,14 +11,14 @@ export const Card = styled.div`
 		18.5px 18.5px 21.2px rgba(0, 0, 0, 0.044),
 		32.4px 32.4px 37px rgba(0, 0, 0, 0.052),
 		70px 70px 80px rgba(0, 0, 0, 0.07);
-    padding: 15px;
+    padding: clamp(15px, 2.5vw, 25px);
 	text-align: left;
 	width: 100%;
 
 	// Breakpoint (Small, Smartphone)
 	@media (min-width: 576px) {
 		border: 2px solid;
-		border-radius: 25px;
+		border-radius: clamp(10px, 1.7vw, 25px);
 		width: clamp(36rem, 90vw, 70rem);
 	}
 
@@ -30,7 +30,6 @@ export const Card = styled.div`
 	/* Breakpoint (Large, Desktop) */
 	@media screen and (min-width: 992px) {
 		border-width: 4px;
-		padding: 25px;
 	}
 `;
 
