@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const HeadingOne = styled.h1`
     align-items: center;
     display: flex;
-    font-size: clamp(1.5rem, 4.42vw, 2.125rem);
+    font-size: clamp(1.5rem, -0.375rem + 5.208vw, 2.125rem);
 
     svg {
-        height: clamp(1.5rem, 4.42vw, 2.125rem);
-        width: clamp(1.5rem, 4.42vw, 2.125rem);
+        height: clamp(1.5rem, -0.375rem + 5.208vw, 2.125rem);
+        width: clamp(1.5rem, -0.375rem + 5.208vw, 2.125rem);
     }
 `;
 
